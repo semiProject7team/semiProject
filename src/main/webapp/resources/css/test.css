@@ -1,0 +1,2699 @@
+@charset 'UTF-8';
+
+.sub_title_wrap{padding-top:80px;
+				height:200px;
+				position:relative;
+				min-width:1240px}
+				
+#container .sub_title_wrap.small{height:140px;
+								padding-top:47px}
+#container .sub_title{font-family:"ProximaNova-Thin","yg740";
+						font-size:44px;
+						line-height:54px;
+						color:#333;
+						text-align:center;
+						text-transform:uppercase}
+#container .sub_title .txt_ko{font-size:36px;
+								vertical-align:2px}
+
+.shoppingbag .bag_wrap .bag_cont{float:left;
+									width:920px}
+.shoppingbag .bag_wrap .bag_cont_nomember{float:left;
+											width:960px}
+.shoppingbag .bag_wrap .bag_cont.final{width:960px}
+.shoppingbag .bag_wrap .bag_cont .mypage{width:100%;
+										margin-bottom:60px}
+
+.shoppingbag .bag_wrap .shoppingbag-sale__wrap{background:#ffe8e8;
+											padding-top:44px;
+											margin-bottom:10px;
+											height:124px;
+											position:relative}
+.shoppingbag .bag_wrap .shoppingbag-sale__wrap .shoppingbag-sale{width:calc(100% - 40px);
+																height:16px;margin:0 auto;background-color:#bfbfbf;
+																position:relative;
+																-webkit-border-radius:32px;
+																-moz-border-radius:32px;
+																border-radius:32px;
+																overflow:hidden}
+.shoppingbag .bag_wrap .shoppingbag-sale__wrap .shoppingbag-sale__label-wrap{position:absolute;
+																				top:30px;
+																				left:0;
+																				right:0;
+																				width:calc(100% - 44px);
+																				margin:auto}
+.shoppingbag .bag_wrap .shoppingbag-sale__wrap .shoppingbag-sale__label{position:absolute;
+																		top:0;
+																		left:0;
+																		z-index:5;
+																		-webkit-transition:left .3s ease-in-out;
+																		-moz-transition:left .3s ease-in-out;
+																		-ms-transition:left .3s ease-in-out;
+																		transition:left .3s ease-in-out}
+.shoppingbag .bag_wrap .shoppingbag-sale__wrap .shoppingbag-sale__label.hasNum{width:100px}
+.shoppingbag .bag_wrap .shoppingbag-sale__wrap .shoppingbag-sale__label.hasNum span{left:-30%}
+.shoppingbag .bag_wrap .shoppingbag-sale__wrap .shoppingbag-sale__label span{background:#ff6160;
+																			padding:4px 8px;
+																			position:relative;
+																			top:-10px;
+																			left:-50%;
+																			color:#fff;
+																			height:20px;
+																			font-size:12px;
+																			font-family:"ProximaNova-Regular";
+																			-webkit-border-radius:32px;
+																			-moz-border-radius:32px;
+																			border-radius:32px}
+.shoppingbag .bag_wrap .shoppingbag-sale__wrap .shoppingbag-sale__label span.active{left:calc(-50% - 16px)}
+.shoppingbag .bag_wrap .shoppingbag-sale__wrap .shoppingbag-sale__label span.active:before{left:auto;
+																							right:8px}
+.shoppingbag .bag_wrap .shoppingbag-sale__wrap .shoppingbag-sale__label span:before{content:'';
+																					border-top:1px solid #ff6160;
+																					border-left:1px solid #ff6160;
+																					background:#ff6160;
+																					width:6px;
+																					height:6px;
+																					position:absolute;
+																					bottom:-2px;
+																					left:0;
+																					right:0;
+																					margin:auto;
+																					-webkit-transform:rotate(45deg);
+																					-moz-transform:rotate(45deg);
+																					-ms-transform:rotate(45deg);
+																					transform:rotate(45deg)}
+.shoppingbag .bag_wrap .shoppingbag-sale__wrap .shoppingbag-sale__gauge{position:absolute;
+																		left:0;
+																		top:0;
+																		height:100%;
+																		width:0;
+																		background-color:#ff6160;
+																		z-index:2;
+																		transition:width .3s ease-in-out;
+																		overflow:hidden}
+.shoppingbag .bag_wrap .shoppingbag-sale__wrap .shoppingbag-sale__spot{position:absolute;
+																	left:0;
+																	top:0;
+																	height:100%;
+																	z-index:3;
+																	line-height:16px;
+																	text-align:right;
+																	border-right:1px dashed rgba(255,255,255,.8);
+																	opacity:.8}
+.shoppingbag .bag_wrap .shoppingbag-sale__wrap .shoppingbag-sale__spot span{display:block;
+																			font-size:10px;
+																			line-height:16px;
+																			color:#fff;
+																			padding-right:8px}
+.shoppingbag .bag_wrap .shoppingbag-sale__wrap .shoppingbag-sale__spot:last-child{border:0}
+.shoppingbag .bag_wrap .shoppingbag-sale__wrap .shoppingbag-coupon-benefit{width:100%;
+																			position:relative;
+																			height:61px}
+shoppingbag .bag_wrap .shoppingbag-sale__wrap .shoppingbag-coupon-benefit__item{display:none;
+																				padding:0 20px;
+																				height:auto;
+																				width:100%;
+																				position:absolute;
+																				top:50%;left:0;
+																				-webkit-transform:translateY(-50%);
+																				-moz-transform:translateY(-50%);
+																				-ms-transform:translateY(-50%);
+																				-o-transform:translateY(-50%);
+																				transform:translateY(-50%)}
+.shoppingbag .bag_wrap .shoppingbag-sale__wrap .shoppingbag-coupon-benefit__item.active{display:block}
+.shoppingbag .bag_wrap .shoppingbag-sale__wrap .shoppingbag-coupon-benefit__text{position:relative;
+																					display:block;
+																					color:#4c4c4c;
+																					font-size:12px;
+																					font-family:"ProximaNova-Regular","yg740";
+																					text-align:left;
+																					width:184px}
+.shoppingbag .bag_wrap .shoppingbag-sale__wrap .shoppingbag-coupon-benefit__text em{color:#ff6160}
+.shoppingbag .bag_wrap .shoppingbag-sale__wrap .shoppingbag-coupon-benefit__text span{font-size:13px}
+.shoppingbag .bag_wrap .shoppingbag-sale__wrap .shoppingbag-coupon-benefit__coupon{width:66px;
+																					text-align:center;
+																					background:#fff;
+																					color:#ff6160;
+																					font-size:12px;
+																					line-height:28px;
+																					height:28px;
+																					position:absolute;
+																					bottom:0;
+																					right:20px;
+																					top:0;
+																					margin:auto;
+																					z-index:2;
+																					-webkit-border-radius:32px;
+																					-moz-border-radius:32px;
+																					border-radius:32px}
+.shoppingbag .bag_wrap .shoppingbag-link__wrap{background:#ffe8e8;
+											height:58px;
+											margin-bottom:10px}
+.shoppingbag .bag_wrap .shoppingbag-link__wrap button{width:100%;
+													color:#ff6160;
+													line-height:58px;
+													display:block;
+													text-align:center;
+													font-size:14px;
+													position:relative}
+.shoppingbag .bag_wrap .shoppingbag-link__wrap button:after{content:'';
+															display:inline-block;
+															width:15px;
+															height:15px;
+															background:url("//static.wconcept.co.kr/web/Images/shoppingbag/icon-shoppingbag-coupon__link.png") no-repeat center;
+															background-size:contain;
+															vertical-align:middle;
+															margin-left:4px;
+															margin-top:-3px}
+.shoppingbag .bag_wrap .payment{float:right;
+								width:300px;
+								margin-top:42px}
+.shoppingbag .bag_wrap .payment_nomember{float:right;
+										width:260px;
+										margin-top:42px}
+.shoppingbag .bag_wrap .payment.final{width:260px}
+.shoppingbag .bag_wrap .payment.fixed{margin-top:0;
+									position:fixed}
+.shoppingbag .bag_wrap .payment.fixed.nomember{margin-top:0}
+.shoppingbag .bag_wrap .payment.absolute{position:absolute;
+										bottom:0;
+										right:0;
+										margin-top:0}
+.shoppingbag .bag_wrap .payment.absolute.nomember{margin-top:0}
+.shoppingbag .bag_wrap .payment.nomember{margin-top:66px}
+.shoppingbag .bag_wrap:after{display:block;
+							clear:both;
+							content:''}
+.shoppingbag .step{width:305px;
+					margin:-56px auto 80px;
+					text-align:center}
+.shoppingbag .step li{display:inline;
+					font-size:14px;
+					color:#a1a1a1;
+					position:relative}
+.shoppingbag .step li+li{padding-left:37px}
+.shoppingbag .step li+li:before{content:"";
+								width:7px;height:12px;
+								background:url("//static.wconcept.co.kr/web/images/common/ico_order_step_12.png") no-repeat;
+								background-size:100%;
+								position:absolute;
+								top:3px;
+								left:13px}
+.shoppingbag .step li.active{color:#000}
+.shoppingbag .tit{margin-bottom:11px;
+					font-size:24px}
+.shoppingbag .tit .notice_box{line-height:29px}
+.shoppingbag .tit span,.shoppingbag .tit em{display:inline-block}
+.shoppingbag .tit span{font-size:26px;
+						font-family:"ProximaNova-Light";
+						vertical-align:bottom}
+.shoppingbag .tit span.recall{margin-left:10px}
+.shoppingbag .tit span.recall label{padding-left:25px !important;
+									font-size:12px;color:#666}
+.shoppingbag .tit em{vertical-align:middle;
+					font-family:"ProximaNova-Regular"}
+.shoppingbag .tit button{float:right;
+						height:30px;
+						line-height:28px;
+						font-size:14px}
+.shoppingbag .tit.mt120{margin-top:118px}
+.shoppingbag .tit.mt60{margin-top:60px}
+.shoppingbag .tit .btn_fold{position:relative;
+							width:25px;
+							height:25px;
+							background:url("//static.wconcept.co.kr/web/images/common/btn_agreement_arrow_bottom.png") no-repeat}
+.shoppingbag .tit .btn_fold.active{background:url("//static.wconcept.co.kr/web/images/common/btn_agreement_arrow_top.png") no-repeat}
+.shoppingbag .tbl_product{margin-bottom:60px}
+.shoppingbag .tbl_product tr.active .btn_coupon{border-color:#4cc9e0;
+												color:#333}
+.shoppingbag .tbl_product tr.active .btn_coupon:before{background-position:-300px 0}
+.shoppingbag .tbl_product tr.inner_row td{border-top-color:#f2f2f2}
+.shoppingbag .tbl_product tr.inner_row .delivery{font-size:12px}
+.shoppingbag .tbl_product tr .delivery{color:#333}
+.shoppingbag .tbl_product tr .delivery .tooltip_r .tooltip_cont{width:220px}
+.shoppingbag .tbl_product tr .delivery .tooltip_r.active .tooltip_cont{top:25px;left:-67px}
+.shoppingbag .tbl_product tr .delivery .tooltip_r.active .tooltip_cont:before{top:-10.5px;
+																				left:50%;
+																				-webkit-transform:rotate(90deg);
+																				-moz-transform:rotate(90deg);
+																				-ms-transform:rotate(90deg);
+																				-o-transform:rotate(90deg);
+																				transform:rotate(90deg)}
+.shoppingbag .tbl_product tr .delivery .tooltip_r.active .tooltip_cont p{text-align:center;
+																		font-size:12px;
+																		line-height:18px;
+																		color:#333}
+.shoppingbag .tbl_product tr .delivery .tooltip_r.active .tooltip_cont p a{text-decoration:underline;
+																			display:block}
+.shoppingbag .tbl_product tr .delivery em,.shoppingbag .tbl_product tr .delivery strong{font-family:"ProximaNova-Regular","yg740"}
+.shoppingbag .tbl_product tr .delivery strong{display:block;
+												margin-bottom:12px;
+												font-size:14px}
+.shoppingbag .tbl_product tr .delivery .s{font-size:12px}
+.shoppingbag .tbl_product tr .delivery.bg{background-color:#fbfbfb}
+.shoppingbag .tbl_product th{padding:25px 0}
+.shoppingbag .tbl_product th .price_box{padding:15px 20px;
+										background:#af66fe}
+.shoppingbag .tbl_product td{padding:18px 0 20px;
+							text-align:center}
+.shoppingbag .tbl_product td.product{padding:20px 54px 20px 10px}
+.shoppingbag .tbl_product td.product .img{width:90px;height:120px;
+											display:block;
+											float:left;
+											margin-right:20px;
+											position:relative}
+.shoppingbag .tbl_product td.product .img img{display:block;width:100%}
+.shoppingbag .tbl_product td.product .img span.mask_funding,.shoppingbag .tbl_product td.product .img span.mask_pre_order{display:block;
+																															position:absolute;bottom:0;
+																															left:0;
+																															right:0;
+																															margin:0 auto;
+																															z-index:1;
+																															width:100%;
+																															padding:6px 0;
+																															background-color:#000;
+																															opacity:.8;
+																															color:#fff;
+																															font-family:"ProximaNova-Semibold";
+																															font-size:13px;
+																															text-align:center}
+.shoppingbag .tbl_product td.product img{width:90px;
+											height:120px;
+											display:block;
+											float:left;
+											margin-right:20px;
+											position:relative;
+											vertical-align:top}
+.shoppingbag .tbl_product td.product div.ml80{margin-left:80px}
+.shoppingbag .tbl_product td.product div.ml110{margin-left:110px}
+.shoppingbag .tbl_product td.product p{line-height:normal}
+.shoppingbag .tbl_product td.product p.delivery_date{color:#333;
+													margin-top:15px}
+.shoppingbag .tbl_product td.product p.option{font-family:"yg740";
+											font-size:12px;
+											line-height:14px;
+											color:#808080}
+.shoppingbag .tbl_product td.product p.product_name{height:30px;
+													margin-bottom:8px;
+													white-space:normal;
+													line-height:15px;
+													color:#333}
+.shoppingbag .tbl_product td.product .sold_out{display:block;
+												background:url("//static.wconcept.co.kr/web/images/common/spr-common.png") 0 0 no-repeat;
+												width:65px;
+												height:18px;
+												margin-top:10px;
+												overflow:hidden;
+												text-indent:-9999px;
+												background-position:-510px 0}
+.shoppingbag .tbl_product td.product .set-goods{overflow:hidden}
+.shoppingbag .tbl_product td.product .set-goods strong{float:left;
+														width:38px;
+														font-family:"ProximaNova-Semibold";
+														font-size:12px;
+														line-height:20px;
+														color:#333;
+														text-decoration:underline}
+.shoppingbag .tbl_product td.product .set-goods span{float:left;
+													width:79%;
+													font-family:"yg740";
+													font-size:12px;
+													line-height:20px;
+													color:#333;
+													text-overflow:ellipsis;
+													white-space:nowrap;
+													word-wrap:normal;
+													overflow:hidden}
+.shoppingbag .tbl_product td.product .set-goods.mt_10{margin-top:-10px}
+.shoppingbag .tbl_product td.price{font-size:14px;
+									font-family:"ProximaNova-Regular","yg740"}
+.shoppingbag .tbl_product td.price strike,.shoppingbag .tbl_product td.price .option{display:block;
+																					font-size:12px}
+.shoppingbag .tbl_product td.price strike{font-size:12px;
+										color:#808080}
+.shoppingbag .tbl_product td.price .option{margin-top:12px}
+.shoppingbag .tbl_product td.price .option span{font-family:"yg740";
+												font-size:12px;
+												color:#666}
+.shoppingbag .tbl_product .input_button.small{width:17px}
+.shoppingbag .tbl_product .input_button.small input[type=checkbox]+label{padding:0}
+.shoppingbag .tbl_product .btn_opt{position:relative;
+									width:56px;
+									height:16px;
+									margin-top:7px;
+									padding:0 5px 2px 0;
+									border-bottom:1px solid #666;
+									font-size:12px;
+									color:#333}
+.shoppingbag .tbl_product .btn_opt:before{content:'';
+										display:block;
+										width:5px;
+										height:4px;
+										position:absolute;
+										top:6px;
+										right:0;
+										background:url("//static.wconcept.co.kr/web/images/common/spr-bag.png") -400px 0 no-repeat}
+.shoppingbag .tbl_product .each{width:45px;
+								height:25px;
+								margin:0 auto;
+								border:1px solid #dfdfdf;
+								position:relative;
+								padding-right:18px}
+.shoppingbag .tbl_product .each:after{display:block;
+									clear:both;
+									content:''}
+.shoppingbag .tbl_product .each input,.shoppingbag .tbl_product .each button{margin:0;
+																			padding:0;
+																			border:none;
+																			background-color:#fff;
+																			vertical-align:top;
+																			font-family:"ProximaNova-Regular"}
+.shoppingbag .tbl_product .each button{width:19px;
+										height:11px;
+										background:url("//static.wconcept.co.kr/web/images/common/spr-bag.png") 0 0 no-repeat;
+										text-indent:-999em;
+										overflow:hidden;
+										position:absolute;
+										top:0;
+										right:0}
+.shoppingbag .tbl_product .each .btn_up{border-bottom:1px solid #dfdfdf;
+										background-position:7px -46px}
+.shoppingbag .tbl_product .each .btn_down{background-position:-43px -46px;
+											top:auto;
+											bottom:0}
+.shoppingbag .tbl_product .each input{width:23px;
+										height:23px;
+										border-right:1px solid #dfdfdf;
+										font-size:12px;
+										text-align:center;
+										line-height:normal}
+.shoppingbag .tbl_product .micro_btn{min-width:70px;
+									height:20px;
+									padding:0;
+									border:1px solid #c5c5c5;
+									line-height:18px;
+									color:#323232}
+.shoppingbag .tbl_product .micro_btn:disabled{border-color:#a4a4a4;
+												color:#a4a4a4}
+.shoppingbag .tbl_product .btn_each{min-width:45px;
+									margin-top:5px}
+.shoppingbag .tbl_product .num_coupon{display:block;
+									font-family:"ProximaNova-Medium"}
+.shoppingbag .tbl_product .btn_coupon{position:relative;
+										width:74px;
+										height:18px;
+										padding-right:17px;
+										border:1px solid #d9d9d9;
+										font-size:12px;
+										color:#a4a4a4;
+										margin-top:7px}
+.shoppingbag .tbl_product .btn_coupon:before{content:'';
+											display:block;
+											width:17px;
+											height:18px;
+											background:url("//static.wconcept.co.kr/web/images/common/spr-bag.png") -350px 0 no-repeat;
+											position:absolute;
+											top:-1px;
+											right:-1px}
+.shoppingbag .tbl_product .btn_now {
+	font-family: "yg750";
+	background-color: #000;
+	border-color: #000;
+	color: #fff
+}
+
+.shoppingbag .tbl_product .btn_later, .shoppingbag .tbl_product .btn_bag
+	{
+	margin-top: 5px
+}
+
+.shoppingbag .tbl_product .btn_my {
+	margin-top: 5px
+}
+
+.shoppingbag .tbl_product .btn_my .fa-heart {
+	margin: 0 3px;
+	font-size: 12px
+}
+
+.shoppingbag .tbl_product .btn_my.active {
+	color: #ed9e9e;
+	border-color: #ed9e9e
+}
+
+.shoppingbag .tbl_product .btn_delete {
+	margin-top: 5px
+}
+
+.shoppingbag .tbl_product .btn_delete:after {
+	content: '';
+	display: inline-block;
+	width: 9px;
+	height: 9px;
+	margin-left: 3px;
+	background:
+		url("//static.wconcept.co.kr/web/images/common/spr-product.png") -90px
+		0 no-repeat
+}
+
+.shoppingbag .tbl_product .btn_del {
+	position: relative;
+	width: 39px;
+	height: 13px;
+	margin-top: 10px;
+	padding-right: 15px;
+	font-size: 12px;
+	color: #333
+}
+
+.shoppingbag .tbl_product .btn_del:before {
+	content: '';
+	display: block;
+	width: 13px;
+	height: 13px;
+	background:
+		url("//static.wconcept.co.kr/web/images/common/spr-product.png") -30px
+		-30px no-repeat;
+	position: absolute;
+	top: 2px;
+	right: 0
+}
+
+.shoppingbag .tbl_product.type2 td.product {
+	padding-left: 20px
+}
+
+.shoppingbag .txt_guide {
+	margin-top: 7px;
+	float: right;
+	color: #666;
+	text-align: right;
+	line-height: 20px
+}
+
+.shoppingbag .txt_guide strong {
+	font-family: "yg750";
+	color: #000
+}
+
+.shoppingbag .bx_btn button {
+	height: 50px
+}
+
+.shoppingbag .bx_btn button:first-child {
+	margin-right: 10px
+}
+
+.shoppingbag .bx_btn button.small {
+	min-width: 140px
+}
+
+.shoppingbag .bx_btn_ar {
+	text-align: right
+}
+
+.shoppingbag .bx_btn_ar .btn.small {
+	min-width: 140px
+}
+
+.shoppingbag .bx_btn:after {
+	display: block;
+	clear: both;
+	content: ''
+}
+
+.shoppingbag .tit_carousel {
+	margin: 120px 0 15px 0;
+	font-size: 18px;
+	font-family: "ProximaNova-Semibold"
+}
+
+.shoppingbag .lst_carousel {
+	position: relative
+}
+
+.shoppingbag .lst_carousel .thumbnail_list li {
+	width: 190px;
+	margin: 0 20px 0 0
+}
+
+.shoppingbag .lst_carousel .thumbnail_list li .img {
+	height: 253px
+}
+
+.shoppingbag .lst_carousel .ix-controller {
+	position: absolute;
+	top: -39px;
+	right: -9px
+}
+
+.shoppingbag .lst_carousel .ix-controller a {
+	display: block;
+	overflow: hidden;
+	float: left;
+	width: 29px;
+	height: 30px;
+	line-height: 99em;
+	vertical-align: top;
+	background:
+		url("//static.wconcept.co.kr/web/images/common/spr-brand.png") 0 0
+		no-repeat
+}
+
+.shoppingbag .lst_carousel .ix-controller a.ix-btn-prev {
+	margin-right: 1px;
+	background-position: 0 -50px
+}
+
+.shoppingbag .lst_carousel .ix-controller a.ix-btn-next {
+	background-position: -50px -50px
+}
+
+.shoppingbag .lst_carousel .ix-controller:after {
+	position: absolute;
+	top: 9px;
+	left: 50%;
+	width: 1px;
+	height: 13px;
+	background: #b5b5b5;
+	content: ''
+}
+
+.shoppingbag .lst_dash {
+	padding-right: 50px
+}
+
+.shoppingbag .lst_dash li {
+	position: relative;
+	margin-top: 4px;
+	padding-left: 15px;
+	color: #666;
+	font-family: "yg740";
+	line-height: 1.5
+}
+
+.shoppingbag .lst_dash li a {
+	color: #666
+}
+
+.shoppingbag .lst_dash li .go {
+	display: inline-block;
+	position: relative;
+	margin-left: 3px;
+	padding-left: 1px;
+	color: #666;
+	line-height: 1.2;
+	border-bottom: 1px solid #666;
+	vertical-align: 0
+}
+
+.shoppingbag .lst_dash li .go:after {
+	display: inline-block;
+	width: 4px;
+	height: 5px;
+	margin: 4px 0 0 3px;
+	background:
+		url("//static.wconcept.co.kr/web/images/common/spr-common.png") -300px
+		0 no-repeat;
+	vertical-align: top;
+	content: ''
+}
+
+.shoppingbag .lst_dash li:before {
+	position: absolute;
+	top: 7px;
+	left: 0;
+	width: 5px;
+	height: 1px;
+	background: #666;
+	content: ''
+}
+
+.shoppingbag .lst_dash li:first-child {
+	margin-top: 0
+}
+
+.shoppingbag p.lst_dash {
+	position: relative;
+	margin-top: 18px;
+	padding-left: 15px;
+	color: #666;
+	font-family: "yg740"
+}
+
+.shoppingbag p.lst_dash:before {
+	position: absolute;
+	top: 6px;
+	left: 0;
+	width: 5px;
+	height: 1px;
+	background: #666;
+	content: ''
+}
+
+.shoppingbag .radio_group li {
+	float: left
+}
+
+.shoppingbag .radio_group:after {
+	display: block;
+	clear: both;
+	content: ''
+}
+
+.shoppingbag .input_group .select-list-box, .shoppingbag .input_group input[type=text]
+	{
+	float: left;
+	margin-right: 14px
+}
+
+.shoppingbag .input_group p {
+	float: left
+}
+
+.shoppingbag .input_group:after {
+	display: block;
+	clear: both;
+	content: ''
+}
+
+.shoppingbag .input_group.dot {
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+	border-bottom: 1px dashed #d9d9d9
+}
+
+.shoppingbag .Puni-pass .tbl_rixl td {
+	padding: 15px 19px
+}
+
+.shoppingbag .Puni-pass .tbl_rixl td .input_area {
+	margin-bottom: 15px
+}
+
+.shoppingbag .Puni-pass .tbl_rixl td .input_button {
+	display: block
+}
+
+.shoppingbag .Puni-pass .tbl_rixl td .input_button label {
+	font-size: 12px;
+	color: #333
+}
+
+.shoppingbag .Puni-pass .tbl_rixl td p {
+	font-size: 12px;
+	margin-top: 15px;
+	color: #333;
+	line-height: 17px
+}
+
+.shoppingbag .h_group {
+	margin-bottom: 10px
+}
+
+.shoppingbag .h_group .tit {
+	float: left;
+	padding-top: 4px;
+	padding-bottom: 0
+}
+
+.shoppingbag .h_group .btn {
+	float: right;
+	min-width: auto;
+	width: 100px;
+	height: 30px;
+	padding: 0;
+	font-family: "yg740";
+	line-height: 28px
+}
+
+.shoppingbag .h_group:after {
+	display: block;
+	clear: both;
+	content: ''
+}
+
+.shoppingbag .h_group p {
+	float: right;
+	font-size: 12px;
+	color: #666;
+	padding-top: 18px
+}
+
+.shoppingbag table.tbl_rixl th {
+	color: #333
+}
+
+.shoppingbag table.tbl_rixl td {
+	font-family: "yg740"
+}
+
+.shoppingbag table.tbl_rixl td.multi_input_row input[type=text] {
+	margin-right: 7px
+}
+
+.shoppingbag table.tbl_rixl td .btn {
+	min-width: 140px
+}
+
+.shoppingbag table.tbl_rixl td .btn.small.ml30 {
+	min-width: 115px
+}
+
+.shoppingbag table.tbl_rixl td p.txt_red {
+	margin-top: 6px
+}
+
+.shoppingbag table.tbl_rixl.gift_select .select-list-box .select-list {
+	z-index: 10
+}
+
+.shoppingbag table.tbl_sale td {
+	color: #333
+}
+
+.shoppingbag table.tbl_sale td .price {
+	font-family: 'arial';
+	font-size: 16px
+}
+
+.shoppingbag table.tbl_sale td input[type=text] {
+	width: 250px;
+	font-family: 'arial';
+	font-size: 16px
+}
+
+.shoppingbag table.tbl_sale td .btn.small {
+	min-width: 115px;
+	padding: 0
+}
+
+.shoppingbag table.tbl_sale td.point_align {
+	font-size: 0
+}
+
+.shoppingbag table.tbl_sale td.point_align input, .shoppingbag table.tbl_sale td.point_align span,
+	.shoppingbag table.tbl_sale td.point_align p, .shoppingbag table.tbl_sale td.point_align strong
+	{
+	display: inline-block;
+	vertical-align: top
+}
+
+.shoppingbag table.tbl_sale td.point_align input {
+	font-size: 16px
+}
+
+.shoppingbag table.tbl_sale td.point_align label {
+	font-size: 14px
+}
+
+.shoppingbag table.tbl_sale td.point_align p {
+	font-size: 12px;
+	line-height: 40px
+}
+
+.shoppingbag table.tbl_sale td.point_align p em {
+	font-size: 14px
+}
+
+.shoppingbag table.tbl_sale td.point_align strong {
+	font-size: 14px;
+	width: 31px;
+	margin-left: 10px;
+	line-height: 40px
+}
+
+.shoppingbag table.tbl_sale td.point_align .input_button {
+	margin-top: 11px
+}
+
+.shoppingbag table.tbl_sale .cupon {
+	display: inline-block;
+	margin-left: 4px;
+	vertical-align: -8px
+}
+
+.shoppingbag table.tbl_sale .cupon li {
+	position: relative;
+	float: left;
+	margin-left: 10px;
+	padding-left: 11px;
+	font-size: 12px
+}
+
+.shoppingbag table.tbl_sale .cupon li em {
+	margin-left: 9px;
+	color: #000;
+	font-family: "ProximaNova-Regular";
+	font-size: 14px
+}
+
+.shoppingbag table.tbl_sale .cupon li:first-child {
+	margin-left: 0;
+	padding-left: 7px
+}
+
+.shoppingbag table.tbl_sale .cupon li:nth-child(2):before {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	width: 1px;
+	height: 11px;
+	margin-top: -5px;
+	background: #d9d9d9;
+	content: ''
+}
+
+.shoppingbag table.tbl_sale .cupon:after {
+	display: block;
+	clear: both;
+	content: ''
+}
+
+.shoppingbag table.tbl_sale .point {
+	margin-left: 16px;
+	font-size: 12px
+}
+
+.shoppingbag table.tbl_sale .point em {
+	margin-left: 9px;
+	color: #000;
+	font-family: "ProximaNova-Regular";
+	font-size: 14px
+}
+
+.shoppingbag table.tbl_sale .inp_cupon:disabled {
+	background-color: #f2f2f2;
+	border: none
+}
+
+.shoppingbag table.tbl_sale .inp_cupon.active {
+	background-color: #fff;
+	border: 1px solid #000;
+	color: #000
+}
+
+.shoppingbag table .drop_down {
+	position: relative;
+	display: inline-block;
+	background: #ff0
+}
+
+.shoppingbag table .drop_down ul {
+	display: none;
+	position: absolute;
+	top: 39px;
+	left: 0;
+	right: 0;
+	z-index: 10;
+	border: 1px solid #000;
+	background: #fff
+}
+
+.shoppingbag table .drop_down ul li {
+	display: block;
+	height: 40px;
+	padding-left: 20px;
+	color: #000;
+	line-height: 40px;
+	cursor: pointer
+}
+
+.shoppingbag table .drop_down ul li:hover, .shoppingbag table .drop_down ul li:focus
+	{
+	background: #e6e6e6
+}
+
+.shoppingbag table .drop_down.active input[type=text] {
+	border: 1px solid #000;
+	background-color: #fff
+}
+
+.shoppingbag table .drop_down.active ul {
+	display: block
+}
+
+.shoppingbag table .tooltip_r {
+	display: inline-block;
+	position: relative
+}
+
+.shoppingbag table .tooltip_r>em {
+	cursor: pointer
+}
+
+.shoppingbag table .tooltip_r>em:after {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background:
+		url("//static.wconcept.co.kr/web/images/common/spr-common.png") -150px
+		-60px no-repeat;
+	margin-left: 3px;
+	vertical-align: top;
+	content: ''
+}
+
+.shoppingbag table .tooltip_r .tooltip_cont {
+	display: none;
+	position: absolute;
+	top: -18px;
+	left: 83px;
+	z-index: 1;
+	width: 585px;
+	padding: 18px 18px 15px 20px;
+	background: #fff;
+	border: 1px solid #9d9d9d;
+	border-radius: 5px;
+	box-shadow: 3px 3px 0 rgba(0, 0, 0, .1)
+}
+
+.shoppingbag table .tooltip_r .tooltip_cont:before {
+	position: absolute;
+	top: 19px;
+	left: -9px;
+	width: 9px;
+	height: 12px;
+	background: url("//static.wconcept.co.kr/web/images/common/spr-bag.png")
+		-150px -50px no-repeat;
+	content: ''
+}
+
+.shoppingbag table .tooltip_r .tooltip_cont .desc {
+	font-family: "ProximaNova-Regular", "yg740";
+	font-size: 16px
+}
+
+.shoppingbag table .tooltip_r .tooltip_cont .dot {
+	margin-top: 12px
+}
+
+.shoppingbag table .tooltip_r .tooltip_cont .dot li {
+	position: relative;
+	margin-top: 5px;
+	padding-left: 11px;
+	font-family: "ProximaNova-Light", "yg740";
+	font-size: 12px;
+	line-height: 1.5
+}
+
+.shoppingbag table .tooltip_r .tooltip_cont .dot li:before {
+	position: absolute;
+	top: 5px;
+	left: 0;
+	width: 2px;
+	height: 2px;
+	background: #666;
+	content: ''
+}
+
+.shoppingbag table .tooltip_r .tooltip_cont.balance {
+	width: 385px;
+	left: 64px
+}
+
+.shoppingbag table .tooltip_r.active .tooltip_cont {
+	display: block
+}
+
+.shoppingbag .gift_msg {
+	padding: 24px 12px 24px 19px
+}
+
+.shoppingbag .img_gift_card {
+	width: 100%;
+	background:
+		url("//static.wconcept.co.kr/web/images/common/gift_card_bg.png")
+		no-repeat;
+	background-size: cover;
+	position: relative;
+	padding: 40px 50px
+}
+
+.shoppingbag .img_gift_card textarea {
+	width: 100%;
+	height: auto;
+	background: #fff;
+	text-align: center;
+	font-size: 14px;
+	line-height: 20px;
+	letter-spacing: -.28px;
+	padding: 28px 50px;
+	border: none;
+	color: #333
+}
+
+.shoppingbag .img_gift_card textarea::placeholder {
+	color: #777
+}
+
+.shoppingbag .choice {
+	border: 2px solid #7d7d7d;
+	text-align: center;
+	font-size: 0
+}
+
+.shoppingbag .choice li {
+	display: inline-block;
+	position: relative;
+	height: 61px;
+	padding: 0 10px;
+	margin-left: 30px;
+	text-align: center
+}
+
+.shoppingbag .choice li .input_button input[type=radio] {
+	top: 50%;
+	margin-top: -10px
+}
+
+.shoppingbag .choice li .input_button input[type=radio]+label {
+	font-size: 16px;
+	height: 61px;
+	line-height: 61px;
+	vertical-align: middle
+}
+
+.shoppingbag .choice li .input_button input[type=radio]+label:before {
+	top: 50%;
+	margin-top: -10px
+}
+
+.shoppingbag .choice li .input_button.dot:after {
+	content: "";
+	display: block;
+	width: 5px;
+	height: 5px;
+	background: #fa5500;
+	border-radius: 50%;
+	position: absolute;
+	top: 20px;
+	right: -8px
+}
+
+.shoppingbag .choice li .wpay_tooltip {
+	width: 55px;
+	height: 31px;
+	padding-top: 5px;
+	text-align: center;
+	font-size: 12px;
+	color: #fa5500;
+	background:
+		url("//static.wconcept.co.kr/web/images/common/tooltip_bubble_cont.png")
+		no-repeat;
+	background-size: contain;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: -50%;
+	margin: 19px 0 0 auto;
+	animation-name: wpay_tooltip;
+	animation-iteration-count: infinite;
+	animation-duration: 1.2s;
+	animation-fill-mode: both;
+	-webkit-animation-name: wpay_tooltip;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-duration: 1.2s;
+	-webkit-animation-fill-mode: both
+}
+
+@
+-webkit-keyframes wpay_tooltip { 0%{
+	top: -50%
+}
+
+50
+%
+{
+top
+:
+-60%
+}
+100
+%
+{
+top
+:
+-50%
+}
+}
+@
+keyframes wpay_tooltip { 0%{
+	top: -50%
+}
+
+50
+%
+{
+top
+:
+-60%
+}
+100
+%
+{
+top
+:
+-50%
+}
+}
+.shoppingbag .choice li:first-child {
+	margin-left: 0
+}
+
+.shoppingbag .choice li:after {
+	display: none;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 3px;
+	background: #ff6160;
+	content: ''
+}
+
+.shoppingbag .choice li.active:not(.disabled):after {
+	display: block
+}
+
+.shoppingbag .choice:after {
+	display: block;
+	clear: both;
+	content: ''
+}
+
+.shoppingbag .bx_pay {
+	margin-top: 20px;
+	border-top: 1px solid #d9d9d9;
+	border-bottom: 1px solid #d9d9d9;
+	background: #f8f8f8
+}
+
+.shoppingbag .bx_pay h4 {
+	float: left;
+	width: 170px;
+	padding: 18px 0 0 20px;
+	font-family: "yg740";
+	font-size: 16px;
+	line-height: 22px
+}
+
+.shoppingbag .bx_pay .cont {
+	float: right;
+	width: 790px;
+	padding: 20px 20px 18px;
+	background: #fff
+}
+
+.shoppingbag .bx_pay:after, .shoppingbag .bx_pay .bx_wrap:after {
+	display: block;
+	clear: both;
+	content: ''
+}
+
+.shoppingbag .bx_pay .bx_wrap {
+	border-top: 1px solid #d9d9d9
+}
+
+.shoppingbag .bx_pay .bx_wrap:first-child {
+	border-top: none
+}
+
+.shoppingbag .bx_pay table {
+	margin-bottom: 15px;
+	border-top: 1px solid #bbb;
+	border-bottom: 1px solid #bbb;
+	line-height: 22px
+}
+
+.shoppingbag .bx_pay table tbody th {
+	font-size: 12px;
+	vertical-align: top;
+	padding: 10px 15px;
+	height: auto;
+	border-right: 1px solid #d9d9d9
+}
+
+.shoppingbag .bx_pay table tbody td {
+	font-size: 12px;
+	vertical-align: top;
+	padding: 10px 15px
+}
+
+.shoppingbag .bx_pay.wpay .registration_card {
+	text-align: center
+}
+
+.shoppingbag .bx_pay.wpay .registration_card button {
+	width: 295px;
+	height: 150px;
+	border: 1px solid #ddd;
+	border-radius: 5px
+}
+
+.shoppingbag .bx_pay.wpay .registration_card button h5 {
+	font-family: "yg750";
+	font-size: 14px;
+	line-height: 20px;
+	letter-spacing: -.28px;
+	position: relative;
+	color: #000;
+	padding-top: 23px
+}
+
+.shoppingbag .bx_pay.wpay .registration_card button h5:after,
+	.shoppingbag .bx_pay.wpay .registration_card button h5:before {
+	display: block;
+	content: "";
+	width: 1px;
+	height: 18px;
+	position: absolute;
+	background: #333
+}
+
+.shoppingbag .bx_pay.wpay .registration_card button h5:after {
+	top: 0;
+	left: 50%;
+	margin-left: -1px
+}
+
+.shoppingbag .bx_pay.wpay .registration_card button h5:before {
+	top: 0;
+	left: 50%;
+	margin-left: -1px;
+	transform: rotate(90deg)
+}
+
+.shoppingbag .bx_pay.wpay .registration_card button p {
+	font-size: 12px;
+	line-height: 18px;
+	letter-spacing: -.24px;
+	margin-top: 10px;
+	color: #777
+}
+
+.shoppingbag .bx_pay.wpay .card_list {
+	padding: 0 70px
+}
+
+.shoppingbag .bx_pay.wpay .card_list .card_list_item {
+	width: 295px;
+	height: 150px;
+	margin-right: 20px;
+	background: #f5f5f5;
+	border-radius: 4px;
+	border: 1px solid #f5f5f5;
+	padding: 24px 24px 0 24px;
+	position: relative
+}
+
+.shoppingbag .bx_pay.wpay .card_list .card_list_item.active {
+	border-color: #000
+}
+
+.shoppingbag .bx_pay.wpay .card_list .card_list_item .card_list_item_t {
+	padding-bottom: 1.25rem
+}
+
+.shoppingbag .bx_pay.wpay .card_list .card_list_item .card_list_item_t:after
+	{
+	clear: both;
+	display: block;
+	content: ""
+}
+
+.shoppingbag .bx_pay.wpay .card_list .card_list_item .card_list_item_t .img
+	{
+	width: 52px;
+	float: left
+}
+
+.shoppingbag .bx_pay.wpay .card_list .card_list_item .card_list_item_t .img img
+	{
+	width: 100%
+}
+
+.shoppingbag .bx_pay.wpay .card_list .card_list_item .card_list_item_t .card_info
+	{
+	float: left;
+	margin-left: 16px
+}
+
+.shoppingbag .bx_pay.wpay .card_list .card_list_item .card_list_item_t .card_info .card_number
+	{
+	font-family: "ProximaNova-Semibold";
+	font-size: 18px;
+	line-height: 22px;
+	color: #000
+}
+
+.shoppingbag .bx_pay.wpay .card_list .card_list_item .card_list_item_t .card_info .card_name
+	{
+	font-size: 14px;
+	line-height: 18px;
+	letter-spacing: -.28px;
+	margin-top: 4px;
+	color: #aaa
+}
+
+.shoppingbag .bx_pay.wpay .card_list .card_list_item .card_list_item_b {
+	border-top: 1px solid #eaeaea
+}
+
+.shoppingbag .bx_pay.wpay .card_list .card_list_item .card_list_item_b .bookmark_btn
+	{
+	width: 50px;
+	height: 50px;
+	font-size: 0;
+	background:
+		url("//static.wconcept.co.kr/mobile/images/wpay/ico_liked_card_n_50.png")
+		no-repeat;
+	background-size: 100%;
+	margin-left: -14px
+}
+
+.shoppingbag .bx_pay.wpay .card_list .card_list_item .card_list_item_b .bookmark_btn.active
+	{
+	background:
+		url("//static.wconcept.co.kr/mobile/images/wpay/ico_liked_card_a_50.png")
+		no-repeat;
+	background-size: 100%
+}
+
+.shoppingbag .bx_pay.wpay .card_list .card_list_item .card_list_item_b .select
+	{
+	position: absolute;
+	bottom: 0;
+	right: 24px;
+	background: transparent;
+	width: 80px;
+	height: 50px;
+	text-align: right
+}
+
+.shoppingbag .bx_pay.wpay .card_list .card_list_item .card_list_item_b .select select
+	{
+	display: block;
+	height: 50px;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0
+}
+
+.shoppingbag .bx_pay.wpay .card_list .card_list_item .card_list_item_b .select .select_box
+	{
+	display: block;
+	font-size: 14px;
+	line-height: 50px;
+	letter-spacing: -.28px;
+	height: 50px;
+	padding: 0 17px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	color: #777
+}
+
+.shoppingbag .bx_pay.wpay .card_list .card_list_item .card_list_item_b .select .select_box:before
+	{
+	content: '';
+	display: block;
+	width: 9px;
+	height: 6px;
+	background:
+		url("//static.wconcept.co.kr/mobile/images/wpay/ico_select_arrow.png")
+		no-repeat;
+	background-size: 100%;
+	position: absolute;
+	top: 22px;
+	right: 0
+}
+
+.shoppingbag .bx_pay.wpay .card_list .slick-arrow {
+	width: 70px;
+	height: 96px;
+	text-indent: -9999px;
+	font-size: 0;
+	position: absolute;
+	top: 50%;
+	margin-top: -48px
+}
+
+.shoppingbag .bx_pay.wpay .card_list .slick-prev {
+	background:
+		url("//static.wconcept.co.kr/web/images/common/btn_arrow_prev_96.png")
+		no-repeat;
+	background-size: 100%;
+	left: -20px
+}
+
+.shoppingbag .bx_pay.wpay .card_list .slick-next {
+	background:
+		url("//static.wconcept.co.kr/web/images/common/btn_arrow_next_96.png")
+		no-repeat;
+	background-size: 100%;
+	right: -20px
+}
+
+.shoppingbag .bx_pay table {
+	font-size: 14px;
+	margin-bottom: 15px;
+	border-top: 2px solid #171717;
+	border-bottom: 1px solid #171717;
+	line-height: 22px
+}
+
+.shoppingbag .bx_pay table th, .shoppingbag .bx_pay table td {
+	padding: 10px 15px
+}
+
+.shoppingbag .bx_pay table thead th {
+	border-bottom: 1px solid #666
+}
+
+.shoppingbag .bx_pay table tbody th {
+	border-right: 1px solid #d9d9d9;
+	text-align: center
+}
+
+.shoppingbag .bx_pay.simple .radio_group {
+	margin-bottom: 27px
+}
+
+.shoppingbag .bx_pay.simple .radio_group li:last-child {
+	margin-right: 0
+}
+
+.shoppingbag .bx_pay.simple .radio_group li img {
+	vertical-align: top
+}
+
+.shoppingbag .bx_pay.cash p.desc {
+	line-height: 22px;
+	color: #666
+}
+
+.shoppingbag .bx_pay.cash .radio_group li {
+	margin-right: 58px
+}
+
+.shoppingbag .bx_pay.cash h5 {
+	font-size: 14px;
+	margin-top: 10px
+}
+
+.shoppingbag .bx_pay.cash h5.table_tit {
+	display: none
+}
+
+.shoppingbag .bx_pay.cash.active .checkbox_group li, .shoppingbag .bx_pay.cash.active .insurance .lst_dash
+	{
+	display: block !important
+}
+
+.shoppingbag .bx_pay.cash.active table {
+	display: table !important
+}
+
+.shoppingbag .bx_pay.cash.active h5.table_tit {
+	display: block
+}
+
+.shoppingbag .bx_pay.cash .insurance .lst_dash, .shoppingbag .bx_pay.cash table
+	{
+	display: none !important;
+	margin-top: 15px
+}
+
+.shoppingbag .bx_pay.cash .insurance .lst_dash li {
+	color: #000
+}
+
+.shoppingbag .bx_pay.cash .insurance .lst_dash li:before {
+	width: 3px;
+	height: 3px;
+	background: #303030;
+	border-radius: 50%
+}
+
+.shoppingbag .bx_pay.cash .checkbox_group {
+	margin-top: 10px
+}
+
+.shoppingbag .bx_pay.cash .checkbox_group li {
+	padding: 5px 0;
+	display: none
+}
+
+.shoppingbag .bx_pay.cash .checkbox_group li:first-child {
+	display: block
+}
+
+.shoppingbag .bx_pay.cash .checkbox_group span.input_button input[type=checkbox]
+	{
+	cursor: pointer
+}
+
+.shoppingbag .bx_pay.cash .checkbox_group span.input_button input[type=checkbox]+label
+	{
+	font-size: 12px;
+	cursor: pointer
+}
+
+.shoppingbag .bx_pay.cash .get_info {
+	border-top: 1px dashed #dbdbdb;
+	border-bottom: 1px dashed #dbdbdb;
+	padding: 20px 0;
+	margin: 12px 0
+}
+
+.shoppingbag .bx_pay.cash .get_info>li {
+	margin-top: 10px
+}
+
+.shoppingbag .bx_pay.cash .get_info>li:first-child {
+	margin-top: 0
+}
+
+.shoppingbag .bx_pay.cash .get_info>li:after {
+	display: block;
+	clear: both;
+	content: ''
+}
+
+.shoppingbag .bx_pay.cash .get_info h5 {
+	width: 140px;
+	float: left;
+	font-size: 14px;
+	line-height: 40px;
+	margin-top: 0
+}
+
+.shoppingbag .bx_pay.cash .get_info .input_group, .shoppingbag .bx_pay.cash .get_info .radio_group
+	{
+	float: left
+}
+
+.shoppingbag .bx_pay.cash .get_info .radio_group {
+	margin-top: 10px
+}
+
+.shoppingbag .bx_pay.overseas .radio_group li {
+	margin-right: 70px
+}
+
+.shoppingbag .bx_pay.overseas .input_group {
+	margin-top: 30px
+}
+
+.shoppingbag .pay_agree {
+	margin-top: 12px
+}
+
+.shoppingbag .cash_tax h5 {
+	color: #333;
+	font-family: "yg740";
+	font-size: 14px
+}
+
+.shoppingbag .cash_tax h5 .micro_btn {
+	margin: -3px 0 0 9px;
+	vertical-align: top
+}
+
+.shoppingbag .cash_tax .radio_group {
+	margin-top: 20px
+}
+
+.shoppingbag .cash_tax .radio_group li {
+	margin-right: 40px !important
+}
+
+.shoppingbag .cash_tax .input_group {
+	margin-top: 20px
+}
+
+.shoppingbag .bn-promotion {
+	margin: 2px 0 16px
+}
+
+.shoppingbag .bn-promotion .slick-dots {
+	position: absolute;
+	bottom: 8px;
+	z-index: 5;
+	width: 100%;
+	text-align: center
+}
+
+.shoppingbag .bn-promotion .slick-dots li {
+	display: inline-block;
+	margin: 0 3px
+}
+
+.shoppingbag .bn-promotion .slick-dots li.slick-active button {
+	opacity: 1
+}
+
+.shoppingbag .bn-promotion .slick-dots li button {
+	border: 1px solid #000;
+	background-color: #fff;
+	opacity: .4;
+	padding: 0;
+	width: 10px;
+	height: 10px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	font-size: 0;
+	text-indent: -9999px
+}
+
+.shoppingbag .bx_promotion {
+	padding: 15px 20px 18px;
+	margin-bottom: 15px;
+	border: 1px solid #ededed
+}
+
+.shoppingbag .bx_promotion ul {
+	margin-left: -20px
+}
+
+.shoppingbag .bx_promotion ul li {
+	float: left;
+	width: 50%;
+	margin-top: 5px;
+	padding-left: 20px;
+	font-size: 14px
+}
+
+.shoppingbag .bx_promotion ul li em {
+	display: inline-block;
+	margin-right: 20px;
+	color: #ff6160;
+	font-family: "yg750"
+}
+
+.shoppingbag .bx_promotion ul li em:before {
+	display: inline-block;
+	width: 2px;
+	height: 2px;
+	margin: 7px 9px 0 1px;
+	background: #ff6160;
+	vertical-align: top;
+	content: ''
+}
+
+.shoppingbag .bx_promotion ul:after {
+	display: block;
+	clear: both;
+	content: ''
+}
+
+.shoppingbag .bx_promotion p {
+	margin-top: 13px;
+	color: #666;
+	font-family: "yg740"
+}
+
+.shoppingbag .bx_promotion p span {
+	margin-right: 4px;
+	vertical-align: -2px
+}
+
+.shoppingbag .free_benefit {
+	width: 100%;
+	border-top: 1px solid #ededed;
+	border-bottom: 1px solid #ededed
+}
+
+.shoppingbag .free_benefit ul {
+	display: table;
+	table-layout: fixed;
+	width: 100%;
+	min-height: 140px
+}
+
+.shoppingbag .free_benefit ul li {
+	display: table-cell;
+	height: 100%;
+	padding: 20px 25px 18px;
+	text-align: center;
+	border-left: 1px solid #f3f3f3
+}
+
+.shoppingbag .free_benefit ul li:last-child {
+	border-right: 1px solid #f3f3f3
+}
+
+.shoppingbag .free_benefit ul li img {
+	vertical-align: top
+}
+
+.shoppingbag .free_benefit ul li p {
+	margin-top: 13px;
+	color: #333
+}
+
+.shoppingbag .txt_nonmember {
+	padding-bottom: 20px
+}
+
+.shoppingbag .bx_nonmember {
+	display: none;
+	width: 954px;
+	height: 294px;
+	padding: 30px;
+	border: 3px solid #f8f8f8;
+	overflow: hidden;
+	font-family: "yg740";
+	color: #333
+}
+
+.shoppingbag .bx_nonmember.active {
+	display: block;
+	margin-bottom: 20px
+}
+
+.shoppingbag .bx_nonmember h4 {
+	font-size: 18px;
+	color: #000
+}
+
+.shoppingbag .bx_nonmember .guide {
+	margin: 10px 0;
+	color: #333
+}
+
+.shoppingbag .bx_nonmember table {
+	margin-bottom: 0
+}
+
+.shoppingbag .bx_nonmember th, .shoppingbag .bx_nonmember td {
+	height: 58px
+}
+
+.shoppingbag .bx_nonmember th {
+	color: #000
+}
+
+.shoppingbag .bx_nonmember td {
+	padding-left: 11px;
+	color: #333;
+	text-align: left
+}
+
+.shoppingbag .bx_nonmember td:first-child {
+	border-right: 1px solid #d9d9d9
+}
+
+.shoppingbag .bx_nonmember li {
+	line-height: 20px;
+	margin-top: 20px
+}
+
+.shoppingbag .bx_nonmember li:first-child {
+	margin-top: 5px
+}
+
+.shoppingbag .bx_nonmember li li {
+	margin: 0
+}
+
+.shoppingbag .bx_nonmember li strong {
+	display: block;
+	margin-top: 10px;
+	font-size: 14px
+}
+
+.shoppingbag .gray_3 {
+	margin-top: 20px
+}
+
+.shoppingbag .gray_3 span.input_button input[type=checkbox]+label {
+	color: #333
+}
+
+.shoppingbag .member_guide {
+	overflow: hidden;
+	margin-bottom: 60px
+}
+
+.shoppingbag .member_guide h4 {
+	float: left;
+	width: 770px;
+	height: 70px;
+	line-height: 70px;
+	font-family: "yg740";
+	font-size: 18px;
+	color: #fff;
+	background-color: #171717;
+	vertical-align: middle;
+	text-align: center
+}
+
+.shoppingbag .member_guide h4 span {
+	color: #ff6160
+}
+
+.shoppingbag .member_guide h4 span em {
+	font-family: "ProximaNova-Regular";
+	font-size: 20px
+}
+
+.shoppingbag .member_guide strong {
+	font-size: 14px;
+	color: #a8a8a8
+}
+
+.shoppingbag .member_guide strong em {
+	font-family: "ProximaNova-Regular"
+}
+
+.shoppingbag .member_guide .btn_join {
+	float: left;
+	display: inline-block;
+	min-width: 190px;
+	height: 70px;
+	line-height: 70px;
+	font-family: "yg740";
+	font-size: 18px;
+	color: #fff;
+	background-color: #ff6160;
+	border: none;
+	position: relative;
+	padding-right: 10px
+}
+
+.shoppingbag .member_guide .btn_join:after {
+	display: block;
+	content: "";
+	width: 10px;
+	height: 14px;
+	background:
+		url("//static.wconcept.co.kr/web/images/common/btn_agreement_arrow_right.png")
+		no-repeat;
+	position: absolute;
+	right: 53px;
+	top: 50%;
+	margin-top: -7px
+}
+
+.shoppingbag .bx_total h3, .shoppingbag .bx_total ul {
+	background-color: #f2f2f2
+}
+
+.shoppingbag .bx_total h3 {
+	height: 70px;
+	padding-top: 27px;
+	border-bottom: 1px solid #ababab;
+	font-family: "yg750";
+	font-size: 18px;
+	text-align: center
+}
+
+.shoppingbag .bx_total ul {
+	padding: 23px 0
+}
+
+.shoppingbag .bx_total li {
+	margin: 8px 20px 0 20px;
+	color: #333;
+	overflow: hidden
+}
+
+.shoppingbag .bx_total li * {
+	font-family: "ProximaNova-Regular", "yg740"
+}
+
+.shoppingbag .bx_total li strong, .shoppingbag .bx_total li p {
+	display: inline-block
+}
+
+.shoppingbag .bx_total li strong {
+	float: left;
+	font-size: 14px
+}
+
+.shoppingbag .bx_total li p {
+	width: 114px;
+	text-align: right;
+	font-family: "ProximaNova-Regular";
+	font-size: 14px;
+	float: right
+}
+
+.shoppingbag .bx_total li p em {
+	margin-right: 5px;
+	font-size: 18px
+}
+
+.shoppingbag .bx_total li p>span {
+	color: #666;
+	font-size: 12px;
+	vertical-align: 2px
+}
+
+.shoppingbag .bx_total li:first-child {
+	margin-top: 0
+}
+
+.shoppingbag .bx_total li.total {
+	margin-top: 20px;
+	padding-top: 18px;
+	border-top: 1px solid #d9d9d9
+}
+
+.shoppingbag .bx_total li.total strong {
+	color: #000
+}
+
+.shoppingbag .bx_total li.total em {
+	font-size: 20px;
+	color: #fa5500
+}
+
+.shoppingbag .bx_total li.point {
+	margin-top: 10px;
+	color: #666;
+	overflow: visible
+}
+
+.shoppingbag .bx_total li.point:after {
+	display: block;
+	clear: both;
+	content: ''
+}
+
+.shoppingbag .bx_total li.point strong {
+	font-size: 12px
+}
+
+.shoppingbag .bx_total li.point p {
+	font-size: 14px;
+	font-family: "ProximaNova-Light"
+}
+
+.shoppingbag .bx_total li.point p em {
+	font-size: 14px
+}
+
+.shoppingbag .bx_total li.promotion {
+	margin-top: 20px;
+	padding-top: 18px;
+	border-top: 1px solid #d9d9d9;
+	overflow: hidden
+}
+
+.shoppingbag .bx_total li.promotion .info {
+	display: block;
+	margin-top: -1px;
+	color: #666;
+	font-family: "yg740";
+	font-size: 12px;
+	clear: both;
+	padding-top: 5px
+}
+
+.shoppingbag .bx_total li.promotion .desc {
+	width: 100%;
+	text-align: left;
+	margin-top: 10px;
+	font-size: 12px
+}
+
+.shoppingbag .bx_total li.promotion .desc>span {
+	vertical-align: -2px
+}
+
+.shoppingbag .btn_order {
+	width: 100%;
+	height: 70px;
+	background-color: #000;
+	font-family: "yg750";
+	font-size: 18px;
+	line-height: 70px;
+	color: #fff
+}
+
+.shoppingbag .bx_agree {
+	margin-top: 10px;
+	padding: 20px;
+	border: 1px solid #ddd;
+	color: #333
+}
+
+.shoppingbag .bx_agree .total {
+	font-size: 16px
+}
+
+.shoppingbag .bx_agree span {
+	display: block;
+	color: #666;
+	font-size: 12px;
+	letter-spacing: -1px
+}
+
+.shoppingbag .bx_agree .agree {
+	margin-top: 11px;
+	padding-top: 14px;
+	border-top: 1px dashed #d9d9d9
+}
+
+.shoppingbag .bx_agree .agree span {
+	display: block;
+	margin-top: 1px;
+	color: #666;
+	font-size: 12px;
+	letter-spacing: -1px
+}
+
+.shoppingbag .bx_agree .agree span label {
+	font-size: 12px
+}
+
+.shoppingbag .bx_agree .agree button {
+	color: #333;
+	font-family: "yg750";
+	font-size: 12px;
+	line-height: 20px;
+	border: 1px solid #c5c5c5;
+	margin-left: 29px;
+	height: 20px;
+	padding: 0 5px;
+	margin-top: 5px;
+	min-width: 58px
+}
+
+.shoppingbag .order_complete {
+	border-top: 1px solid #c0c0c0;
+	text-align: center;
+	padding: 60px 0
+}
+
+.shoppingbag .order_complete h3 {
+	font-family: "yg750";
+	font-size: 28px;
+	color: #000;
+	margin-bottom: 16px
+}
+
+.shoppingbag .order_complete p {
+	font-family: "yg740";
+	font-size: 18px;
+	letter-spacing: -.025em
+}
+
+.shoppingbag .order_complete p span, .shoppingbag .order_complete p em {
+	font-family: arial;
+	color: #000
+}
+
+.shoppingbag .order_complete p em {
+	color: #ff6160
+}
+
+.shoppingbag .order_complete .join_nike_btn {
+	display: block;
+	width: 250px;
+	height: 50px;
+	font-family: "ProximaNova-Semibold";
+	font-size: 18px;
+	line-height: 50px;
+	margin: 30px auto 0;
+	background: #000;
+	color: #fff;
+	position: relative;
+	padding-right: 22px
+}
+
+.shoppingbag .order_complete .join_nike_btn:after {
+	display: block;
+	content: "";
+	width: 13px;
+	height: 13px;
+	background:
+		url("//static.wconcept.co.kr/web/images/common/outlink_ico.png")
+		no-repeat;
+	background-size: 13px;
+	position: absolute;
+	left: 166px;
+	top: 19px
+}
+
+.shoppingbag .order_complete_info {
+	border: 3px solid #000;
+	display: table;
+	margin-bottom: 21px;
+	background-color: #fbfbfb
+}
+
+.shoppingbag .order_complete_info ul {
+	width: 410px;
+	display: table-cell;
+	vertical-align: top;
+	padding-bottom: 12px
+}
+
+.shoppingbag .order_complete_info ul.center {
+	width: 412px;
+	border-left: 1px solid #d9d9d9;
+	border-right: 1px solid #d9d9d9;
+	position: relative
+}
+
+.shoppingbag .order_complete_info ul.center:before, .shoppingbag .order_complete_info ul.center:after
+	{
+	content: '';
+	display: block;
+	width: 30px;
+	height: 30px
+}
+
+.shoppingbag .order_complete_info ul.center:before {
+	background: url("//static.wconcept.co.kr/web/images/common/spr-bag.png")
+		-200px -50px no-repeat;
+	position: absolute;
+	top: 27px;
+	left: -15px
+}
+
+.shoppingbag .order_complete_info ul.center:after {
+	background: url("//static.wconcept.co.kr/web/images/common/spr-bag.png")
+		-250px -50px no-repeat;
+	position: absolute;
+	top: 27px;
+	right: -15px
+}
+
+.shoppingbag .order_complete_info ul li {
+	line-height: 28px;
+	font-size: 14px;
+	font-family: "yg740";
+	padding: 0 40px
+}
+
+.shoppingbag .order_complete_info ul li:after {
+	display: block;
+	clear: both;
+	content: ''
+}
+
+.shoppingbag .order_complete_info ul li em {
+	font-family: arial
+}
+
+.shoppingbag .order_complete_info ul li em.pointred {
+	color: #ff6160
+}
+
+.shoppingbag .order_complete_info ul li span {
+	display: block;
+	float: left
+}
+
+.shoppingbag .order_complete_info ul li span.pnl {
+	font-family: "ProximaNova-Light";
+	text-transform: uppercase
+}
+
+.shoppingbag .order_complete_info ul li strong {
+	display: block;
+	float: right;
+	text-align: right
+}
+
+.shoppingbag .order_complete_info ul li strong span {
+	float: none;
+	text-align: right;
+	color: #666;
+	line-height: 1em
+}
+
+.shoppingbag .order_complete_info ul li.header {
+	height: 86px;
+	border-bottom: 1px solid #f5f5f5;
+	display: table-cell;
+	width: 410px;
+	vertical-align: middle;
+	color: #000;
+	background-color: #fff
+}
+
+.shoppingbag .order_complete_info ul li.header span {
+	font-family: "yg750";
+	font-size: 16px
+}
+
+.shoppingbag .order_complete_info ul li.header strong {
+	font-size: 14px
+}
+
+.shoppingbag .order_complete_info ul li.header strong em {
+	font-size: 28px
+}
+
+.shoppingbag .order_complete_info ul li.header+li {
+	margin-top: 13px
+}
+
+.shoppingbag .notice_info_list h3 {
+	line-height: 15px;
+	vertical-align: middle;
+	margin-bottom: 8px;
+	font-size: 16px
+}
+
+.shoppingbag .notice_info_list h3:before {
+	content: '';
+	background:
+		url("//static.wconcept.co.kr/web/images/common/spr-mypage.png") -50px
+		0 no-repeat;
+	width: 15px;
+	height: 15px;
+	display: inline-block;
+	vertical-align: bottom;
+	margin-right: 8px
+}
+
+.shoppingbag .notice_info_list>ul {
+	padding-left: 7px
+}
+
+.shoppingbag .notice_info_list>ul>li {
+	font-size: 12px;
+	line-height: 22px;
+	position: relative;
+	padding-left: 11px;
+	vertical-align: top;
+	color: #333;
+	font-family: "yg740"
+}
+
+.shoppingbag .notice_info_list>ul>li:before {
+	width: 2px;
+	height: 2px;
+	background-color: #666;
+	position: absolute;
+	top: 9px;
+	left: 0;
+	content: '';
+	display: block
+}
+
+.shoppingbag .notice_info_list>ul>li>ul {
+	padding-left: 2px;
+	margin-bottom: 10px
+}
+
+.shoppingbag .notice_info_list>ul>li>ul>li {
+	color: #333;
+	font-family: "yg740"
+}
+
+.shoppingbag .notice_info_list>ul>li>ul>li>ul {
+	padding-left: 6px
+}
+
+.shoppingbag .notice_info_list>ul>li>ul>li>ul li {
+	color: #666;
+	font-family: "yg740"
+}
+
+.shoppingbag .notice_info_list>ul>li .go {
+	display: inline-block;
+	position: relative;
+	margin: 0 4px 0 3px;
+	color: #666;
+	vertical-align: top
+}
+
+.shoppingbag .notice_info_list>ul>li .go:before {
+	position: absolute;
+	bottom: 3px;
+	left: 0;
+	right: 0;
+	height: 1px;
+	background: #666;
+	content: ''
+}
+
+.shoppingbag .notice_info_list>ul>li .go:after {
+	display: inline-block;
+	width: 4px;
+	height: 5px;
+	margin: -3px 0 0 5px;
+	background:
+		url("//static.wconcept.co.kr/web/images/common/spr-common.png") -300px
+		0 no-repeat;
+	vertical-align: middle;
+	content: ''
+}
+
+.shoppingbag .notice_info_list.order_complete_notice {
+	margin-bottom: 54px
+}
+
+.shoppingbag .notice_info_list.gift {
+	position: relative;
+	background: #f5f5f5;
+	height: 140px;
+	padding: 27px 0 22px 250px;
+	margin-bottom: 60px
+}
+
+.shoppingbag .notice_info_list.gift .tit {
+	position: absolute;
+	top: 50%;
+	left: 65px;
+	font-family: "yg750";
+	font-size: 16px;
+	margin-top: -44.5px;
+	padding-bottom: 0
+}
+
+.shoppingbag .notice_info_list.gift .tit:before {
+	content: '';
+	display: block;
+	width: 42px;
+	height: 50px;
+	margin: 0 auto 18px;
+	background:
+		url("//static.wconcept.co.kr/web/images/common/ico_gift_42.png")
+		no-repeat;
+	background-size: 100%
+}
+
+.shoppingbag .notice_info_list.gift .color_gray {
+	display: inline-block;
+	width: 95%;
+	vertical-align: middle
+}
+
+.shoppingbag .notice_info_list.gift:after {
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+	content: ''
+}
+
+.shoppingbag .notice_info_list.gift ul li:first-child {
+	color: #fa5500
+}
+
+.shoppingbag .order_complete_delivery th, .shoppingbag .order_complete_delivery td
+	{
+	font-family: "yg740"
+}
+
+.shoppingbag .order_complete_delivery td {
+	color: #000
+}
+
+.shoppingbag .order_complete_delivery .bdl {
+	position: relative
+}
+
+.shoppingbag .order_complete_delivery .bdl:before {
+	content: '';
+	width: 1px;
+	height: 40px;
+	background-color: #d9d9d9;
+	display: block;
+	position: absolute;
+	top: 14px;
+	left: 0
+}
+
+.shoppingbag .order_complete_btn_wrap {
+	font-size: 0;
+	text-align: center
+}
+
+.shoppingbag .order_complete_btn_wrap button, .shoppingbag .order_complete_btn_wrap a
+	{
+	font-size: 14px;
+	margin: 0 10px
+}
+
+.shoppingbag {
+    width: 1240px;
+    margin: 0 auto;
+}
+
+form {
+    display: block;
+    margin-top: 0em;
+}
+
+
+table tbody th {
+    height: 68px;
+    padding-left: 43px;
+    font-family: "yg740";
+    color: #333;
+    font-size: 14px;
+    border-top: 1px solid #d9d9d9;
+    text-align: left;
+}
+
+table tbody td {
+    padding: 0 19px;
+    color: #000;
+    font-size: 14px;
+    border-top: 1px solid #d9d9d9;
+}
+
+table {
+    border-top: 2px solid #171717;
+    border-bottom: 1px solid #171717;
+    table-layout: fixed;
+    margin-bottom: 60px;
+}
+
+* {
+    font-weight: normal;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: none;
+    font-weight: normal;
+    font-style: normal;
+}
+
+form {
+    display: block;
+    margin-top: 0em;
+}
+body {
+    -webkit-font-smoothing: antialiased;
+    min-width: 1240px;
+  
+}
+html {
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+
+.shoppingbag .tit {
+    margin-bottom: 11px;
+    font-size: 24px;
+}
+
+/*jeju*/
+.notice_box {
+    font-size: 11px; 
+    line-height: 18px;
+    float: right;
+    color: #666;
+}
+
+.shoppingbag .tbl_product {
+    margin-bottom: 60px;
+}
+
+table {
+    width: 100%;
+    border-collapse: separate;
+}
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+table {
+    display: table;
+    border-collapse: separate;
+    box-sizing: border-box;
+    text-indent: initial;
+    border-spacing: 2px;
+    border-color: grey;
+}
+
+colgroup {
+    display: table-column-group;
+}
+
+thead {
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+
+table.cols thead th {
+    height: 68px;
+    font-family: "yg750";
+    font-size: 14px;
+    padding: 0 14px;
+    color: #000;
+    text-align: center;
+    vertical-align: middle;
+    border-bottom: 1px solid #b5b5b5;
+}
+
+/* checkout최종 결제*/
+.shoppingbag .bag_wrap .payment.final {
+    width: 260px;
+}
+.bx_total {
+    display: block;
+}
+
+/*배송주소*/
+.shoppingbag table.tbl_rixl td.multi_input_row input[type=text] {
+    margin-right: 7px;
+}
+input[type=text]:disabled, textarea:disabled, input[type=password]:disabled {
+    color: #aaa;
+}
+
+input[type=text], textarea, input[type=password] {
+    height: 40px;
+    line-height: 38px;
+    padding-left: 20px;
+    border: none;
+    background-color: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    font-size: 14px;
+    font-family: "ProximaNova-Regular","yg740";
+    outline: none;
+}
+
+a, img, input, button, select, textarea {
+    vertical-align: middle;
+}
+
+input[type="text" i] {
+    padding: 1px 2px;
+}
+
+/*우편번호 버튼*/
+.btn small gray {
+    
+}
+
+
+.shoppingbag table.tbl_rixl td .btn {
+    min-width: 140px;
+}
+a.btn.small, button.btn.small, input.btn.small, span.btn.small {
+    height: 40px;
+    line-height: 38px;
+}
+
+a.btn.gray, button.btn.gray, input.btn.gray, span.btn.gray {
+    border-color: #7d7d7d;
+    background-color: #7d7d7d;
+    color: #fff;
+}
+
+a.btn, button.btn, input.btn, span.btn {
+    display: inline-block;
+    min-width: 180px;
+    padding: 0 20px;
+    height: 50px;
+    text-align: center;
+    line-height: 48px;
+    border: 1px solid #333;
+    background-color: #fff;
+    color: #000;
+    font-family: "yg750";
+    font-size: 14px;
+}
+
+.bx_btn {
+    padding-bottom: 50px;
+}
+
+.payment {
+    
+    padding-bottom: 20px;
+    
+}
+
+
+/* 장바구니 수량 버튼 */
+.quantity_div{
+				position: relative;
+			    width: 42px;
+			    height: 25px;
+			    text-align: left;
+			    margin: 5px auto;		
+			}
+			.quantity_input{
+				position: absolute;
+				width: 27px;
+			    height: 23px;
+			    text-align: center;
+			    border: 1px solid #c6c6c6;
+			    border-right: 0px;
+			    line-height: 19px;
+			    font-size: 12px;
+			    color: #4c4848;	
+			    left: 0;
+			}
+			.quantity_btn{
+				position: absolute;
+			    border: 1px solid #aaa;
+			    color: #3a60df;
+			    width: 14px;
+			    height: 13px;
+			    padding: 0px;
+			    background-color: #fff;
+			    font-weight: bold;
+			    font-size: 7px;
+			    line-height: 6px;
+			    vertical-align: middle;	
+			}
+			.plus_btn{
+				top: 0;
+				right: 0
+			}
+			.minus_btn{
+				bottom: 0;
+				right: 0
+			}		
+			.quantity_modify_btn{
+				border: 1px solid #d0d0d0;
+			    height: 13px;
+			    line-height: 13px;
+			    background-color: #fff;
+			    text-align: center;
+			    width: 28px;
+			    display: inline-block;
+			    padding: 3px 6px 2px;
+			    margin-top: 3px;		
+			}
+			.table_text_align_center{
+				text-align: center;
+			}
+
