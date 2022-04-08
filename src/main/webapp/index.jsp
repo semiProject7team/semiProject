@@ -20,7 +20,7 @@
     <!-- Load fonts style after rendering the layout styles -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
     <link rel="stylesheet" href="/7team_project/resources/assets/css/fontawesome.min.css">
-<title>메인 페이지</title>
+<title>메인페이지</title>
 </head>
 <body>
 <!-- Start Top Nav -->
@@ -179,7 +179,7 @@
                                 <h1 class="h1">친환경 그릇 판매</h1>
                                 <h3 class="h2">sales of eco-friendly containers </h3>
                                 <p>
-                                    저희 매장 용기내 캠페인 전용 용기 판매 사이트입니다.
+                                    1저희 매장 용기내 캠페인 전용 용기 판매 사이트입니다.
                                     용기내 캠페인은 음식 포장에 무분별하게 사용되는 <strong>일회용품을 줄이고자</strong> 가정 내 다회용 용기(容器)를 들고 가 일회용품 대신 포장을 이끄는 캠페인입니다.
                                 </p>
                             </div>
