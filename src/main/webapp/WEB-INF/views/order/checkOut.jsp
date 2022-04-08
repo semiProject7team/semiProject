@@ -249,13 +249,13 @@ https://templatemo.com/tm-559-zay-shop
 </div> <!--배송지 정보end-->
 
 
-
-<div>
+<!-- 넘어오는 값 확인용 -->
+<%-- <div>
 	${orderList}
 </div>
 <div>
 	${memberInfo}
-</div>
+</div> --%>
 
 <!-- 주문상품 start -->
 <h3 class="tit">&#xC8FC;&#xBB38;&#xC0C1;&#xD488; <div class="notice_box">* 제주/도서산간 지역의 경우 추가 배송비가 발생할 수 있습니다.</div></h3>
