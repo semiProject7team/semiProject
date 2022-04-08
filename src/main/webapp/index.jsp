@@ -157,7 +157,7 @@
                         </div>
                         <div class="col-lg-6 mb-0 d-flex align-items-center">
                             <div class="text-align-left">
-                                <h1 class="h1">다양한 종류 및 사이즈</h1>
+                                <h1 class="h1">다양한 종류 및 사이즈</h1> 
                                 <h3 class="h2">Various types, meticulous size</h3>
                                 <p>
                                    저희 매장은 재활용이 가능한 자연에서 온 유리소재를 선택하고, 충격에 강한 강화유리로 내구성을 더하고 <strong>디테일과 세심한 디자인</strong> 적용 <br/>
