@@ -201,18 +201,15 @@ https://templatemo.com/tm-559-zay-shop
 								</li>
 							</ul>
 
-							<!-- 요청값 : add.do 컨트롤러: Cartcontroller -->
-							<form action="add.do" method="GET">
-							<!-- 장바구니로 넘어가야하는 값 hidden -->
-							<input name="memberId" value="${sessionScope.memberId}"> <!-- **********membetId 세션값 가져오는걸로 바꾸기 -->
-							<input name="goodsNo" value="3"> <!-- **********goodsNo 정보 넣었음 -->
+
+							<form action="" method="GET">
 								<input type="hidden" name="product-title" value="Activewear">
 								<div class="row">
 									<div class="col-auto">
 										<ul class="list-inline pb-3">
 											<li class="list-inline-item text-right">개수 <input
-												type="hidden" name="cartCnt" id="product-quanity"
-												value="1"> <!-- 갯수 name 바꿨음 -->
+												type="hidden" name="product-quanity" id="product-quanity"
+												value="1">
 											</li>
 											<li class="list-inline-item"><span
 												class="btn btn-success" id="btn-minus">-</span></li>
@@ -224,10 +221,10 @@ https://templatemo.com/tm-559-zay-shop
 									</div>
 								</div>
 								<div class="row pb-3">
-									<!-- <div class="col d-grid">
+									<div class="col d-grid">
 										<button type="submit" class="btn btn-success btn-lg"
 											name="submit" value="buy">구매</button>
-									</div> -->
+									</div>
 									<div class="col d-grid">
 										<button type="submit" class="btn btn-success btn-lg"
 											name="submit" value="addtocard">장바구니</button>
@@ -244,7 +241,7 @@ https://templatemo.com/tm-559-zay-shop
 	<!-- Close Content -->
 
 	<!-- Start Footer -->
-	<!-- <footer class="bg-dark" id="tempaltemo_footer">
+	<footer class="bg-dark" id="tempaltemo_footer">
 		<div class="container">
 			<div class="row">
 
@@ -350,7 +347,7 @@ https://templatemo.com/tm-559-zay-shop
 			</div>
 		</div>
 
-	</footer> -->
+	</footer>
 	<!-- End Footer -->
 
 	<!-- Start Script -->

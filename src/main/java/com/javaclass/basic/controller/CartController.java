@@ -34,12 +34,16 @@ public class CartController {
 	@RequestMapping("add.do")
 	public String add(CartVO vo) {
 		service.addCart(vo);
-		//System.out.println("장바구니에 넣엇음");
 		return "redirect:cart.do?memberId="+vo.getMemberId();
 		
 	}	
 	
-
+//	// 장바구니 목록 검색
+//	@RequestMapping("cart.do")
+//	public String getCart(CartVO vo, Model model) {
+//	model.addAttribute("cartList", service.getCart(vo)); 
+//	return "/cart/cart";
+//	}
 	
 	@Autowired
 	private CartMemberServiceImpl mservice;
@@ -47,7 +51,6 @@ public class CartController {
 	// 장바구니 목록 검색 (+로그인 안할 시 로그인 페이지로 보내기)
 		@RequestMapping("cart.do")
 		public String getCart(CartVO vo, MemberVO mvo,Model model,HttpSession session) {
-			//System.out.println("장바구니 불러오기");
 		MemberVO  result = mservice.idCheck_cart(mvo);
 		if (result == null || result.getMemberId() == null ) {
 			// 결과가 없을 경우엔 다시 로그인 페이지로 이동

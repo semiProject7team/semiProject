@@ -1,124 +1,12 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!-- jstl 사용 -->    
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>    
-<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%> 
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>     
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>회원탈퇴</title>
-<!-- CSS -->
-<style type="text/css">
-
-	html { height: 100%; } 
-	/*body { height: 100%; 
-			margin: 0; 
-			font-family: Arial, Helvetica, sans-serif; 
-			display: grid; 
-			justify-items: center; 
-			align-items: center; 
-			background-color: white; }*/
-	h3 {text-align : center;}		
-	/*#main-holder { width: 50%; 
-					height: 70%; 
-					display: grid; 
-					justify-items: center; 
-					align-items: center; 
-					background-color: white; 
-					border-radius: 7px; 
-					box-shadow: 0px 0px 5px 2px black; }*/
-
-	#userinput { align-self: flex-start; 
-				display: grid; 
-				justify-items: center; 
-				align-items: center; } 
-	
-	#delete, #reset { width: 90%; 
-						padding: 7px;
-						margin : 2px;
-						border: none; 
-						border-radius: 5px; 
-						color: white; 
-						font-weight: bold; 
-						background-color: #59ab6e; 
-						cursor: pointer; 
-						outline: none;
-						display : block; }
-	
-	table {display: grid; 
-			justify-items: center; 
-			align-items: center; }
-	
-	table tr {
-	  border-collapse: separate;
-	  border-spacing: 1px;
-	  text-align: left;
-	  line-height: 1.5;
-	  border-top: 1px solid #ccc;
-	  margin: 20px 10px;
-		
-	}
-	table th {
-	  width: 150px;
-	  padding: 10px;
-	  font-weight: bold;
-	  vertical-align: top;
-	  border-bottom: 1px solid #ccc;
-	  background: #F6F6F6;
-	 
-	}
-	
-	table td {
-	  width: 250px;
-	  padding: 10px;
-	  vertical-align: top;
-	  border-bottom: 1px solid #ccc;
-	}			
-	
-	agree {text-align: center;}
-	
-	/* login 밑줄 없애기 */
- a {  text-decoration-line: none; }
-/* 아직 방문하지 않은 링크의 글자색을 정의  */
-a:link {  color : #cfd6e1; }
-/* 사용자가 방문한 적이 있는 링크의 글자색을 정의 */
-a:visited {  color : #cfd6e1; }
-
-</style>
-
-<link rel="stylesheet" href="../resources/style/stylecss.css" type="text/css">
-<script type="text/javascript" src="../resources/js/jquery-1.7.1.js"></script>
-<script  src="../resources/js/js_userinput.js"></script>
-<!-- 다음주소 라이브러리 추가 --> <!-- 주소 찾는 코딩은 맨 밑에 (main 아래) 있습니다 -->
-<script src="http://dmaps.daum.net/map_js_init/postcode.v2.js"></script>
-
-<!-- 제이쿼리 라이브러리 추가 -->
-<script type="text/javascript" src="resources/js/jquery-1.7.1.js"></script>
-
-</head>
-<!-- 제이쿼리 -->
-<script type="text/javascript">
-$(function(){
-	//탈퇴 버튼 눌렸을 때
-	$("#delete").click(function(){
-		//비밀번호 입력하지 않았을때
-		if($('#memberPass').val() == ""){
-			alert("비밀번호를 입력해주세요.");
-			$("#memberPass").focus();
-			return false;
-		}
-		// 비밀번호 맞게 입력했을 때 마지막 확인창
-		alert('정말로 탈퇴 하시겠습니까?');
-		
-	})
-
-});
-</script>
-
-<body >
-<head>
-    <title>Zay Shop eCommerce HTML CSS Template</title>
+    <title>마이페이지</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -134,7 +22,6 @@ $(function(){
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
     <link rel="stylesheet" href="resources/css/fontawesome.min.css">
 <!--
-
     
 TemplateMo 559 Zay Shop
 
@@ -143,8 +30,27 @@ https://templatemo.com/tm-559-zay-shop
 -->
 </head>
 
+<!-- css설정 -->
+<style>
+/*판매자 추천상품 글씨*/
+#recommend {font-weight: bold;
+			text-align: center; 
+			font-family: Arial, Helvetica, sans-serif; 
+			}
+			
+/* login 밑줄 없애기 */
+ a {  text-decoration-line: none; }
+/* 아직 방문하지 않은 링크의 글자색을 정의  */
+a:link {  color : #cfd6e1; }
+/* 사용자가 방문한 적이 있는 링크의 글자색을 정의 */
+a:visited {  color : #cfd6e1; }
+
+#text {  color : #747474; }
+
+</style>
+
 <body>
-    <!-- Start Top Nav -->
+<!-- Start Top Nav -->
     <nav class="navbar navbar-expand-lg bg-dark navbar-light d-none d-lg-block" id="templatemo_nav_top">
         <div class="container text-light">
             <div class="w-100 d-flex justify-content-between">
@@ -155,18 +61,8 @@ https://templatemo.com/tm-559-zay-shop
                     <a class="navbar-sm-brand text-light text-decoration-none" href="010-1234-5678">010-1234-5678</a>
                 </div>
                 <div>
-                
-                   <!-- 로그인 안 했을때 => 로그인 표시 -->
-                   <c:if test = "${empty sessionScope.memberId}" >   
-                    <a href="userLogin.do"> login </a>
-               	   </c:if>
-                   
-                   <!-- 로그인 했을때 => 로그아웃 표시 -->
-                   <c:if test = "${not empty sessionScope.memberId}" >   
-                    <a href="logout.do"> logout </a>
-                   </c:if>
-                
-				<!--<a class="text-light" href="https://fb.com/templatemo" target="_blank" rel="sponsored"><i class="fab fa-facebook-f fa-sm fa-fw me-2"></i></a>
+                   <a href="userLogin.do"> login </a>
+<!--                     <a class="text-light" href="https://fb.com/templatemo" target="_blank" rel="sponsored"><i class="fab fa-facebook-f fa-sm fa-fw me-2"></i></a>
                     <a class="text-light" href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram fa-sm fa-fw me-2"></i></a>
                     <a class="text-light" href="https://twitter.com/" target="_blank"><i class="fab fa-twitter fa-sm fa-fw me-2"></i></a>
                     <a class="text-light" href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin fa-sm fa-fw"></i></a> -->
@@ -219,38 +115,14 @@ https://templatemo.com/tm-559-zay-shop
                    <!-- <a class="nav-icon d-none d-lg-inline" href="#" data-bs-toggle="modal" data-bs-target="#templatemo_search">
                         <i class="fa fa-fw fa-search text-dark mr-2"></i>
                     </a>  -->
-                    
-                    
-                    <!-- 장바구니 로그인 안했을 때 => 로그인 화면으로 이동 -->
-                   <c:if test = "${empty sessionScope.memberId}" > 
-                    <a class="nav-icon position-relative text-decoration-none" href="userLogin.do">
-                        <i class="fa fa-fw fa-cart-arrow-down text-dark mr-1"></i>
-                        <!-- <span class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark">7</span> -->
-                    </a>
-                    </c:if>
-                    <!-- 장바구니 로그인 했을 때 =>  이동 cart.do로 이동-->
-                   <c:if test = "${not empty sessionScope.memberId}" >  
                     <a class="nav-icon position-relative text-decoration-none" href="/cart/cart.do">
                         <i class="fa fa-fw fa-cart-arrow-down text-dark mr-1"></i>
                         <!-- <span class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark">7</span> -->
                     </a>
-                    </c:if>
-                    
-                    <!-- 마이페이지 로그인 안했을 때 =>  로그인 화면으로 이동-->
-                   <c:if test = "${empty sessionScope.memberId}" >  
-                    <a class="nav-icon position-relative text-decoration-none" href="userLogin.do">
-                        <i class="fa fa-fw fa-user text-dark mr-3"></i>
-                        <!-- <span class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark">+99</span> -->
-                    </a> 
-                    </c:if>
-                    
-                    <!-- 마이페이지 로그인 했을 때 =>  mypage.do로 이동-->
-                   <c:if test = "${not empty sessionScope.memberId}" > 
                     <a class="nav-icon position-relative text-decoration-none" href="mypage.do">
                         <i class="fa fa-fw fa-user text-dark mr-3"></i>
                         <!-- <span class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark">+99</span> -->
                     </a> 
-                    </c:if>
                 </div>      
             </div>   
 
@@ -274,72 +146,192 @@ https://templatemo.com/tm-559-zay-shop
             </form>
         </div>
     </div>
+
+
+
+
+
+
+    <!-- Start Categories of The Month -->
+    <section class="container py-5">
+        <div class="row text-center pt-3">
+            <div class="col-lg-6 m-auto">
+                <h3 class="h3">마이페이지</h3>
+                <p>
+                    
+                    
+                    
+                  <a id="text" href="memberInfo.do">[나의정보] 수정하기</a><br/>
+                  <a id="text" href="orderNoList.do?memberId=${ sessionScope.memberId }">[구매목록] 보러가기</a><br/><hr>  
+                    
+                </p>
+            </div>
+        </div>
+        
+        
+        <div style="padding:10px;">. </div>
+        	<div id="recommend" style="color:grey">판매자 추천상품<hr></div>
+                
+        <!-- 판매자 추천상품 -->
+        <div class="row">
+                <div class="col-12 col-md-4 mb-4">
+                    <div class="card h-100">
+                        <a href="shop-single.html">
+                            <img src="resources/imgs/plum.jpg" class="card-img-top" alt="...">
+                        </a>
+                        <div class="card-body">
+                            <ul class="list-unstyled d-flex justify-content-between">
+                                <li>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                </li>
+                                <li class="text-muted text-right">25,000원</li>
+                            </ul>
+                            <a href="shop-single.html" class="h2 text-decoration-none text-dark">도자기그릇</a>
+                            <p class="card-text">
+                                사용하기 편리하고 좋아요 다들 이쁘다고..
+                            </p>
+                            <p class="text-muted">Reviews (24)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 mb-4">
+                    <div class="card h-100">
+                        <a href="shop-single.html">
+                            <img src="resources/imgs/oatmeal.jpg" class="card-img-top" alt="...">
+                        </a>
+                        <div class="card-body">
+                            <ul class="list-unstyled d-flex justify-content-between">
+                                <li>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-muted fa fa-star"></i>
+                                </li>
+                                <li class="text-muted text-right">25,000원</li>
+                            </ul>
+                            <a href="shop-single.html" class="h2 text-decoration-none text-dark">백색그릇</a>
+                            <p class="card-text">
+                                아침에 항상 사용하고 있어요
+                            </p>
+                            <p class="text-muted">Reviews (48)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 mb-4">
+                    <div class="card h-100">
+                        <a href="shop-single.html">
+                            <img src="resources/imgs/tomatoes.jpg" class="card-img-top" alt="...">
+                        </a>
+                        <div class="card-body">
+                            <ul class="list-unstyled d-flex justify-content-between">
+                                <li>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                </li>
+                                <li class="text-muted text-right">25,000원</li>
+                            </ul>
+                            <a href="shop-single.html" class="h2 text-decoration-none text-dark">다용도그릇</a>
+                            <p class="card-text">
+                                다용도 그릇이 필요해서 샀는데 너무 좋아요..
+                            </p>
+                            <p class="text-muted">Reviews (74)</p>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="col-12 col-md-4 mb-4">
+                    <div class="card h-100">
+                        <a href="shop-single.html">
+                            <img src="resources/imgs/wood.jpg" class="card-img-top" alt="...">
+                        </a>
+                        <div class="card-body">
+                            <ul class="list-unstyled d-flex justify-content-between">
+                                <li>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-muted fa fa-star"></i>
+                                    <i class="text-muted fa fa-star"></i>
+                                </li>
+                                <li class="text-muted text-right">25,000원</li>
+                            </ul>
+                            <a href="shop-single.html" class="h2 text-decoration-none text-dark">나무그릇</a>
+                            <p class="card-text">
+                                원목이라 그런지 색감이 너무 맘에 들어요 친구들이 어디서 샀는지..
+                            </p>
+                            <p class="text-muted">Reviews (24)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 mb-4">
+                    <div class="card h-100">
+                        <a href="shop-single.html">
+                            <img src="resources/imgs/healthy.jpg" class="card-img-top" alt="...">
+                        </a>
+                        <div class="card-body">
+                            <ul class="list-unstyled d-flex justify-content-between">
+                                <li>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-muted fa fa-star"></i>
+                                    <i class="text-muted fa fa-star"></i>
+                                </li>
+                                <li class="text-muted text-right">25,000원</li>
+                            </ul>
+                            <a href="shop-single.html" class="h2 text-decoration-none text-dark">국 그릇</a>
+                            <p class="card-text">
+                                크기가 적당해서 좋아요
+                            </p>
+                            <p class="text-muted">Reviews (48)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 mb-4">
+                    <div class="card h-100">
+                        <a href="shop-single.html">
+                            <img src="resources/imgs/bacon.jpg" class="card-img-top" alt="...">
+                        </a>
+                        <div class="card-body">
+                            <ul class="list-unstyled d-flex justify-content-between">
+                                <li>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                </li>
+                                <li class="text-muted text-right">25,000원</li>
+                            </ul>
+                            <a href="shop-single.html" class="h2 text-decoration-none text-dark">다용도그릇</a>
+                            <p class="card-text">
+                                생각보다 크기가 커요 그래서 이것저것 담을 수 있어서..
+                            </p>
+                            <p class="text-muted">Reviews (74)</p>
+                        </div>
+                    </div>
+                </div>               
+                
+            </div>       
+        
+    </section>
     
+    <!-- End Categories of The Month -->
 
-	
-	<main id="main-holder">
-	
-	<div style="padding:100px;">. </div>
-	
-	
-	 <h3 id="delete-header">회원 탈퇴</h3>
+
+ 	 
 	 
-
-	<form method="post" action="delete2.do" name="memberDelete"  id="memberDelete">
-			<table >
-				<tr>
-					<th class="normalbold tb_ttl">
-						<div align="center">사용자 ID</div>
-					</th>
-					<td colspan="2" class="normal">
-						${ sessionScope.memberId }
-						
-					</td>	
-				</tr>
-				<tr>
-					<th class="normalbold tb_ttl">
-						<div align="center">성함</div>
-					</th> 
-					<td colspan="2" class="normal">
-						${ sessionScope.memberName }  
-					</td>	
-				</tr>
-						
-				<tr>
-					<th class="normalbold tb_ttl">
-						<div align="center">비밀번호</div>
-					</th>
-					<td height="23" class="normal">
-						<input type="password" name="memberPass" id="memberPass">
-						
-					<div style=color:red;>
-						<c:if test="${msg == false}">
-						비밀번호가 맞지 않습니다.
-						</c:if>
-					</div>
-					
-					</td>
-				</tr>
-
-				<tr>
-					<td colspan="2" class="normal">
-						<div align="center">
-							<input type="submit" name="delete" id="delete" value="탈   퇴">
-						</div>
-					</td>
-				</tr>
-				
-			</table>
-
-		</form>
-		
-		<div style="padding:100px;">. </div>
-		
-		
-</main>
-
-   <!-- Start Footer -->
-   <!--  <footer class="bg-dark" id="tempaltemo_footer">
+    <!-- Start Footer -->
+    <!-- <footer class="bg-dark" id="tempaltemo_footer">
         <div class="container">
             <div class="row">
 
@@ -422,8 +414,8 @@ https://templatemo.com/tm-559-zay-shop
                 <div class="row pt-2">
                     <div class="col-12">
                         <p class="text-left text-light">
-                            Copyright &copy; 2021 Company Name 
-                            | Designed by <a rel="sponsored" href="https://templatemo.com" target="_blank">TemplateMo</a>
+                            Copyright &copy; 2022 Yonggi Company 
+                            <!-- | Designed by <a rel="sponsored" href="https://templatemo.com" target="_blank">TemplateMo</a> -->
                         </p>
                     </div>
                 </div>
@@ -432,6 +424,7 @@ https://templatemo.com/tm-559-zay-shop
 
     </footer>
     <!-- End Footer -->
+     
 
     <!-- Start Script -->
     <script src="resources/js/jquery-1.11.0.min.js"></script>
@@ -440,13 +433,6 @@ https://templatemo.com/tm-559-zay-shop
     <script src="resources/js/templatemo.js"></script>
     <script src="resources/js/custom.js"></script>
     <!-- End Script -->
-
-
-
 </body>
 
 </html>
-
-
-
-
