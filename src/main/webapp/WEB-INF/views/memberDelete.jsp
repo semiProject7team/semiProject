@@ -395,7 +395,7 @@ https://templatemo.com/tm-559-zay-shop
                 </div>
             </div>
         </div> -->
-
+<!-- 
         <div class="w-100 bg-black py-3">
             <div class="container">
                 <div class="row pt-2">
@@ -409,7 +409,7 @@ https://templatemo.com/tm-559-zay-shop
             </div>
         </div>
 
-    </footer>
+    </footer> -->
     <!-- End Footer -->
 
     <!-- Start Script -->
