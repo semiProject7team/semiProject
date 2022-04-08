@@ -197,7 +197,7 @@ a:visited {  color : #cfd6e1; }
 			
 			$('#deleteReview').click(function(){
 				if( $('#inputOrderNo').val()  != orderNo){
-					alert('구매번호가 일치하지않습니다.확인하세요.')
+					alert('주문번호가 일치하지않습니다.확인하세요.')
 					
 				}else{
 					location.href='deleteReview.do?reviewNo='+reviewNo
@@ -483,10 +483,10 @@ a:visited {  color : #cfd6e1; }
 											</div>
 										</div>
 										<div class="form-group">
-											<label class="control-label col-sm-2" for="pwd">구매번호:</label>
+											<label class="control-label col-sm-2" for="pwd">주문번호:</label>
 											<div class="col-sm-10">
 												<input type="text" class="form-control" id="review_buy_no"
-													name="orderNo" placeholder="구매번호">
+													name="orderNo" placeholder="주문번호">
 											</div>
 										</div>
 										<div class="form-group">
