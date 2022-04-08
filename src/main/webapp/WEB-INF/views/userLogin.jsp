@@ -13,7 +13,7 @@
 <link rel="shortcut icon" type="image/x-icon" href="resources/imgs/favicon.JPG">
 
 <style>
-	
+	 
 	html { height: 100%; } 
 	body { height: 100%; 
 			margin: 0; 

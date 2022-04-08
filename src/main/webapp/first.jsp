@@ -16,7 +16,7 @@
     
     <!-- 파비콘 이미지 수정 -->
     <link rel="shortcut icon" type="image/x-icon" href="resources/imgs/favicon.JPG">
-
+ 
     <link rel="stylesheet" href="resources/css/bootstrap.min.css">
     <link rel="stylesheet" href="resources/css/templatemo.css">
     <link rel="stylesheet" href="resources/css/custom.css">
@@ -491,20 +491,19 @@ a:visited {  color : #cfd6e1; }
             </div>
         </div>-->
 
-        <div class="w-100 bg-black py-3">
+        <!-- <div class="w-100 bg-black py-3">
             <div class="container">
                 <div class="row pt-2">
                     <div class="col-12">
                         <p class="text-left text-light">
                             Copyright &copy; 2022 Yonggi Company
                             <!--  | Designed by <a rel="sponsored" href="https://templatemo.com" target="_blank">TemplateMo</a>-->
-                        </p>
+                        <!--</p>
                     </div>
                 </div>
             </div>
         </div>
-
-    </footer>
+    </footer>-->
     <!-- End Footer -->
 
     <!-- Start Script -->
