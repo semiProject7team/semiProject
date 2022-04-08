@@ -6,7 +6,7 @@
 <html lang="en">
 
 <head>
-<title>Zay Shop - Product Detail Page</title>
+<title>YongGI Shop</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 

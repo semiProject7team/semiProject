@@ -6,7 +6,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-    <title>checkOut.jsp</title>
+    <title>YongGI Shop</title>
      <meta name="viewport" content="width=device-width, initial-scale=1">
     
 
