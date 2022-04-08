@@ -221,7 +221,7 @@
                 <p class="text-center"><a class="btn btn-success" href="/7team_project/shopList/shop.do">매장 리스트 검색 바로가기</a></p>
             </div>
         </div>
-    </section>
+    </section>  
     </div>
     <!-- End Categories of The Month -->
 
