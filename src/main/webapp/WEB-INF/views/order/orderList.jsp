@@ -50,20 +50,26 @@ table.orderList_table thead th {
 }
 </style>
     
-<style type="text/css">
-/* login 밑줄 없애기 */
-a.logincolor {
-	text-decoration-line: none;
-}
-/* 아직 방문하지 않은 링크의 글자색을 정의  */
-a.logincolor:link {
-	color: #cfd6e1;
-}
-/* 사용자가 방문한 적이 있는 링크의 글자색을 정의 */
-a.logincolor:visited {
-	color: #cfd6e1;
-}
-</style>
+	<style type="text/css">
+	/* login 밑줄 없애기 */
+	a.logincolor {
+		text-decoration-line: none;
+	}
+	/* 아직 방문하지 않은 링크의 글자색을 정의  */
+	a.logincolor:link {
+		color: #cfd6e1;
+	}
+	/* 사용자가 방문한 적이 있는 링크의 글자색을 정의 */
+	a.logincolor:visited {
+		color: #cfd6e1;
+	}
+	
+	table.orderList_table {
+	
+	margin-top: 20px;
+	
+	}
+	</style>
 <!--
     
 TemplateMo 559 Zay Shop
@@ -89,12 +95,12 @@ https://templatemo.com/tm-559-zay-shop
                 
                    <!-- 로그인 안 했을때 => 로그인 표시 -->
                    <c:if test = "${empty sessionScope.memberId}" >   
-                    <a href="userLogin.do"> login </a>
+                    <a class="logincolor" href="userLogin.do"> login </a>
                      </c:if>
                    
                    <!-- 로그인 했을때 => 로그아웃 표시 -->
                    <c:if test = "${not empty sessionScope.memberId}" >   
-                    <a href="logout.do"> logout </a>
+                    <a class="logincolor" href="logout.do"> logout </a>
                    </c:if>
                 
             <!--<a class="text-light" href="https://fb.com/templatemo" target="_blank" rel="sponsored"><i class="fab fa-facebook-f fa-sm fa-fw me-2"></i></a>
@@ -235,7 +241,7 @@ https://templatemo.com/tm-559-zay-shop
         <tr>
             <th>주문번호</th>
             <th>주문날짜</th>
-            <th>주문자</th>
+            <th>주문인</th>
         </tr>
     </thead>
     <tbody>
