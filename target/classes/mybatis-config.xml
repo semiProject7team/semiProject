@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration> 
+	<settings>
+		<setting name="mapUnderscoreToCamelCase" value="true"/>
+	</settings>
+	
+	<!-- Alias 설정 -->
+	<typeAliases>
+		<typeAlias type="com.javaclass.basic.vo.MemberVO" alias="MemberVO"/>
+		<typeAlias type="com.javaclass.basic.vo.GoodsVO" alias="GoodsVO"/>
+		<typeAlias type="com.javaclass.basic.vo.LocationVO" alias="LocationVO"/>
+		<typeAlias type="com.javaclass.basic.vo.ShopListVO" alias="ShopListVO"/>
+		<typeAlias type="com.javaclass.basic.vo.SizeVO" alias="SizeVO"/>
+		<typeAlias type="com.javaclass.basic.vo.ShopListVO" alias="ShopListVO"/>
+		<typeAlias type="com.javaclass.basic.vo.AddInfoVO" alias="AddInfoVO"/>
+		<typeAlias type="com.javaclass.basic.vo.OrdersVO" alias="OrdersVO"/>
+		<typeAlias type="com.javaclass.basic.vo.OrderGoodsVO" alias="OrderGoodsVO"/>
+		<typeAlias type="com.javaclass.basic.vo.ReviewVO" alias="ReviewVO"/>
+		<typeAlias type="com.javaclass.basic.vo.CartVO" alias="CartVO"/>
+		<typeAlias type="com.javaclass.basic.vo.OrderPageItemVO" alias="OrderPageItemVO"/>
+		<typeAlias type="com.javaclass.basic.vo.OrderPageVO" alias="OrderPageVO"/>
+		<typeAlias type="com.javaclass.basic.vo.OrderItemVO" alias="OrderItemVO"/>
+		<typeAlias type="com.javaclass.basic.vo.OrderVO" alias="OrderVO"/>
+	</typeAliases>
+	
+	
+
+	
+</configuration>
+
+

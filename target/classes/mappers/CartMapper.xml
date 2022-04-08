@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cartMapper">
+	<!-- *****************cart관련 mapping************************** -->
+	<!-- 카트 추가  -->
+	<insert id="addCart">
+		INSERT INTO cart(cart_no, member_id,goods_no,cart_cnt)
+		VALUES(cart_seq.nextval,#{memberId},#{goodsNo},#{cartCnt})
+	</insert>
+	
+	<!-- 카트 삭제 -->
+	<delete id="deleteCart">
+	
+		DELETE FROM cart WHERE cart_no = #{cartNo}
+	
+	</delete>
+	
+	<!-- 카트 수량 수정 -->
+	<update id="modifyCount" parameterType="CartVO">
+	
+		UPDATE cart SET cart_cnt=#{cartCnt} WHERE cart_no = #{cartNo}
+	
+	</update>
+	
+	
+	<!-- 카트 목록 -->
+	<select id="getCart" parameterType="CartVO" resultType="CartVO"> <!-- resultType는 config.xml에 별칭 지정했음 -->
+	
+		
+		SELECT c.cart_no,c.member_id,c.goods_no, c.cart_cnt, g.goods_name, g.goods_price
+		FROM cart c LEFT OUTER JOIN goods g 
+		ON c.goods_no = g.goods_no
+		WHERE member_id = #{memberId}
+	
+	</select>
+	
+	<!-- 카트 확인 -->
+	<select id="checkCart" resultType="CartVO">
+
+		
+		SELECT * FROM cart
+		WHERE member_id = #{memberId} AND goods_no = #{goodsNo}
+	
+	</select>	
+	
+	<!-- 구매시 카트 삭제 -->
+	<delete id="deleteOrderCart">
+	
+		delete from cart 
+		where member_id = #{memberId} and goods_no = #{goodsNo}
+	
+	</delete>
+	
+	<!-- *****************End of cart관련 mapping************************** -->
+	
+	
+	 
+</mapper>
