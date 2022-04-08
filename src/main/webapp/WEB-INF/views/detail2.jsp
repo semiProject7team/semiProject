@@ -244,7 +244,7 @@ https://templatemo.com/tm-559-zay-shop
 	<!-- Close Content -->
 
 	<!-- Start Footer -->
-	<footer class="bg-dark" id="tempaltemo_footer">
+	<!-- <footer class="bg-dark" id="tempaltemo_footer">
 		<div class="container">
 			<div class="row">
 
@@ -350,7 +350,7 @@ https://templatemo.com/tm-559-zay-shop
 			</div>
 		</div>
 
-	</footer>
+	</footer> -->
 	<!-- End Footer -->
 
 	<!-- Start Script -->

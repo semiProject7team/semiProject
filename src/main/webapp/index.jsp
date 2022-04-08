@@ -347,7 +347,7 @@
 
 
     <!-- Start Footer -->
-    <footer class="bg-dark" id="tempaltemo_footer">
+   <!--  <footer class="bg-dark" id="tempaltemo_footer">
         <div class="container">
             <div class="row">
 
@@ -438,7 +438,7 @@
             </div>
         </div>
 
-    </footer>
+    </footer> -->
 <script src="/7team_project/resources/assets/js/jquery-1.11.0.min.js"></script>
     <script src="/7team_project/resources/assets/js/jquery-migrate-1.2.1.min.js"></script>
     <script src="/7team_project/resources/assets/js/bootstrap.bundle.min.js"></script>
