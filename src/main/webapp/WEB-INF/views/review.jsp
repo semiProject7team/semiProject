@@ -6,6 +6,8 @@
 	작성일 : 2015.11.30
 --%>
 
+<!-- 테스트입니다. -->
+
 <%@ page trimDirectiveWhitespaces="true"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 
@@ -314,6 +316,7 @@ https://templatemo.com/tm-559-zay-shop
 			<thead>
 				<tr>
 					<th id='title'>제목</th>
+					<th>상품번호</th>
 					<th>내용</th>
 					<th>별점</th>
 					<th>날짜</th>
@@ -330,7 +333,9 @@ https://templatemo.com/tm-559-zay-shop
 					<tr class="info" id="info">
 						<td><a data-toggle="modal" data-target="#myModal2" class="reviewNo" orderNo="${review.orderNo }" name="${review.reviewNo}">
 						${review.goodsReview}</a></td>
+						<td>${review.goodsNo }</td>
 						<td>${review.reviewContent }</td>
+						
 						
 						<%-- 별점 --%>
 						<c:choose>
@@ -420,6 +425,13 @@ https://templatemo.com/tm-559-zay-shop
 											<div class="col-sm-10">
 												<input type="text" class="form-control" id="review_buy_no"
 													name="orderNo" placeholder="구매번호">
+											</div>
+										</div>
+										<div class="form-group">
+											<label class="control-label col-sm-2" for="pwd">상품번호:</label>
+											<div class="col-sm-10">
+												<input type="text" class="form-control" id="review_godds_no"
+													name="goodsNo" placeholder="상품번호">
 											</div>
 										</div>
 										<div class="form-group">
