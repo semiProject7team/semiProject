@@ -577,7 +577,7 @@ a:visited {  color : #cfd6e1; }
 	</div>
 	
 	<!-- Start Footer -->
-	<footer class="bg-dark" id="tempaltemo_footer">
+	<!-- <footer class="bg-dark" id="tempaltemo_footer">
 		<div class="container">
 			<div class="row">
 
@@ -683,7 +683,7 @@ a:visited {  color : #cfd6e1; }
 			</div>
 		</div>
 
-	</footer>
+	</footer> -->
 	<!-- End Footer -->
 
 	<!-- Start Script -->
