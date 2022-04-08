@@ -5,7 +5,7 @@
 <html lang="en">
 
 <head>
-    <title>Zay Shop - Product Listing Page</title>
+    <title>용기 쇼핑몰</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,19 +13,19 @@
 
 
 
-    <link rel="apple-touch-icon" href="/7team_project/resources/assets/img/apple-icon.png">
-    <link rel="shortcut icon" type="image/x-icon" href="/7team_project/resources/assets/img/favicon.ico">
+    <link rel="apple-touch-icon" href="resources/assets/img/apple-icon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="resources/assets/img/favicon.ico">
     
-    <link rel="stylesheet" href="/7team_project/resources/assets/css/shop.css">
-    <link rel="stylesheet" href="/7team_project/resources/assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/7team_project/resources/assets/css/templatemo.css">
+    <link rel="stylesheet" href="resources/assets/css/shop.css">
+    <link rel="stylesheet" href="resources/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="resources/assets/css/templatemo.css">
     <!-- <link rel="stylesheet" href="assets/css/custom.css"> -->
 	 <link href="css/bootstrap.min.css" rel="stylesheet">
 	
     
     <!-- Load fonts style after rendering the layout styles -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
-    <link rel="stylesheet" href="/7team_project/resources/assets/css/fontawesome.min.css">
+    <link rel="stylesheet" href="resources/assets/css/fontawesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     
     <script type="text/javascript">
@@ -128,10 +128,10 @@ https://templatemo.com/tm-559-zay-shop
                 <div class="flex-fill">
                     <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="/7team_project/index.jsp">Home</a>
+                            <a class="nav-link" href="index.jsp">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/7team_project/resources/WEB-INF/views/about.do">About</a>
+                            <a class="nav-link" href="resources/WEB-INF/views/about.do">About</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="shop.do">Shop</a>
