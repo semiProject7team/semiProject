@@ -681,7 +681,7 @@ a:visited {  color : #cfd6e1; }
 					</div>
 				</div>
 			</div>
-		</div>
+		</div> 
 
 	</footer> -->
 	<!-- End Footer -->
