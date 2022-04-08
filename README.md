@@ -1,4 +1,0 @@
-# semiProject
-semiProject
-hi
-bye
