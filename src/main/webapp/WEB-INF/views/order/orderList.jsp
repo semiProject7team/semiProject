@@ -5,9 +5,9 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>orderList</title>
+<title>YongGI Shop</title>
 
-
+ 
 
 <link rel="apple-touch-icon" href="resources/img/apple-icon.png">
     <link rel="shortcut icon" type="image/x-icon" href="resources/img/favicon.ico">
