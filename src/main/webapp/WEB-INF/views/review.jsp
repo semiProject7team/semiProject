@@ -563,7 +563,7 @@ a:visited {  color : #cfd6e1; }
 					</div>
 					<div class="modal-footer">
 
-						<input type="text" id="inputOrderNo" placeholder="구매번호를 입력하세요."/>
+						<input type="text" id="inputOrderNo" placeholder="주문번호를 입력하세요."/>
 						<button type="button" class="btn btn-danger"
 						id="deleteReview">삭제</button>
 						<button type="button" class="btn btn-default" data-dismiss="modal">닫기</button>
