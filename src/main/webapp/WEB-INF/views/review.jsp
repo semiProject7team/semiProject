@@ -159,8 +159,7 @@ a:visited {  color : #cfd6e1; }
 				
 		}
 		
-		/*<td><a data-toggle="modal" data-target="#myModal2" class="reviewNo" value="${review.reviewNo}">
-						${review.goodsReview}</a></td>*/
+		
 		$(function(){
 			var reviewNo=''
 			var orderNo=0
@@ -180,19 +179,6 @@ a:visited {  color : #cfd6e1; }
 							
 				})
 				
-				/*
-				
-				$.ajax({	
-				type:'get',
-				url:'locationSelectOption.do',
-				data:{locName:select},
-				contentType: "application/x-www-form-urlencoded; charset=UTF-8",
-				success:function(result){
-					$('#tbody').empty()
-					$('#tbody').html(result)
-				}
-			})
-			*/
 			})
 			
 			$('#deleteReview').click(function(){
