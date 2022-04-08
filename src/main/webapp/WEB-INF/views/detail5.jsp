@@ -221,10 +221,10 @@ https://templatemo.com/tm-559-zay-shop
 									</div>
 								</div>
 								<div class="row pb-3">
-									<div class="col d-grid">
+									<!-- <div class="col d-grid">
 										<button type="submit" class="btn btn-success btn-lg"
 											name="submit" value="buy">구매</button>
-									</div>
+									</div> -->
 									<div class="col d-grid">
 										<button type="submit" class="btn btn-success btn-lg"
 											name="submit" value="addtocard">장바구니</button>
