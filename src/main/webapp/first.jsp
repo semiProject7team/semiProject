@@ -7,7 +7,7 @@
 <!-- 제이쿼리 라이브러리 추가 -->
 <script type="text/javascript" src="resources/js/jquery-1.7.1.js"></script>
 
-<head>
+<head> 
     <title>용기 쇼핑몰</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -57,7 +57,7 @@ a:visited {  color : #cfd6e1; }
 </script>
 
 <body>
-     <!-- Start Top Nav -->
+    <!-- Start Top Nav -->
     <nav class="navbar navbar-expand-lg bg-dark navbar-light d-none d-lg-block" id="templatemo_nav_top">
         <div class="container text-light">
             <div class="w-100 d-flex justify-content-between">

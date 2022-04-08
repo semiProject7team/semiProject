@@ -209,7 +209,7 @@ https://templatemo.com/tm-559-zay-shop
 								<input type="hidden" name="product-title" value="Activewear">
 								<div class="row">
 									<div class="col-auto">
-										<ul class="list-inline pb-3">
+				 						<ul class="list-inline pb-3">
 											<li class="list-inline-item text-right">개수 <input
 												type="hidden" name="cartCnt" id="product-quanity"
 												value="1"> <!-- 갯수 name 바꿨음 -->

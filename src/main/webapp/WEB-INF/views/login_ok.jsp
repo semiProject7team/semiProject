@@ -5,7 +5,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+<head> 
     <title>용기 쇼핑몰</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">

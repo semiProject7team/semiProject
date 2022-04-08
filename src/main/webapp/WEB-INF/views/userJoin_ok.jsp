@@ -4,7 +4,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>     
 <!DOCTYPE html>
 <html lang="en">
-
+ 
 <head>
     <title>용기 쇼핑몰</title>
     <meta charset="utf-8">

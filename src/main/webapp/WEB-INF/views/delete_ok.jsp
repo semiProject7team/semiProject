@@ -4,7 +4,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>     
 <!-- 제이쿼리 라이브러리 추가 -->
 <script type="text/javascript" src="resources/js/jquery-1.7.1.js"></script>
-
+ 
 <!DOCTYPE html>
 <html lang="en">
 <!-- css 설정 -->
