@@ -93,7 +93,7 @@
 <script src="http://dmaps.daum.net/map_js_init/postcode.v2.js"></script>
 
 <!-- 제이쿼리 라이브러리 추가 -->
-<script type="text/javascript" src="/7team_project/resources/js/jquery-1.7.1.js"></script>
+<script type="text/javascript" src="resources/js/jquery-1.7.1.js"></script>
 
 </head>
 <!-- 제이쿼리 -->
@@ -110,7 +110,7 @@ $(function(){
 
 <body >
 <head>
-    <title>Zay Shop eCommerce HTML CSS Template</title>
+    <title>용기 쇼핑몰</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -425,22 +425,21 @@ https://templatemo.com/tm-559-zay-shop
                     </div>
                 </div>
             </div>
-        </div> -->
+        </div>-->
 
-        <div class="w-100 bg-black py-3">
+        <!--<div class="w-100 bg-black py-3">
             <div class="container">
                 <div class="row pt-2">
                     <div class="col-12">
                         <p class="text-left text-light">
                             Copyright &copy; 2022 Yonggi Company
                             <!-- | Designed by <a rel="sponsored" href="https://templatemo.com" target="_blank">TemplateMo</a> -->
-                        </p>
+                        <!--</p>
                     </div>
                 </div>
             </div>
         </div>
-
-    </footer>
+    </footer>-->
     <!-- End Footer -->
 
     <!-- Start Script -->

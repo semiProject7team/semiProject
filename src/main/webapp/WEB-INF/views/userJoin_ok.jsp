@@ -127,7 +127,7 @@ a:visited {  color : #cfd6e1; }
                     </a>  -->
                     
                     
-                    <!-- 장바구니 로그인 안했을 때 => 로그인 화면으로 이동 -->
+                   <%--  <!-- 장바구니 로그인 안했을 때 => 로그인 화면으로 이동 -->
                    <c:if test = "${empty sessionScope.memberId}" > 
                     <a class="nav-icon position-relative text-decoration-none" href="userLogin.do">
                         <i class="fa fa-fw fa-cart-arrow-down text-dark mr-1"></i>
@@ -136,11 +136,17 @@ a:visited {  color : #cfd6e1; }
                     </c:if>
                     <!-- 장바구니 로그인 했을 때 =>  이동 cart.do로 이동-->
                    <c:if test = "${not empty sessionScope.memberId}" >  
-                    <a class="nav-icon position-relative text-decoration-none" href="/cart/cart.do">
+                    <a class="nav-icon position-relative text-decoration-none" href="cart.do?memberId=${sessionScope.memberId}">
                         <i class="fa fa-fw fa-cart-arrow-down text-dark mr-1"></i>
                         <!-- <span class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark">7</span> -->
                     </a>
-                    </c:if>
+                    </c:if> --%>
+                    
+                    <!-- 장바구니 아이콘 누르면 장바구니로 이동 session에 저장된 memberId가져가야함 요청값 : cart.do(CartController) -->
+                    <a class="nav-icon position-relative text-decoration-none" href="cart.do?memberId=${ sessionScope.memberId }">
+                        <i class="fa fa-fw fa-cart-arrow-down text-dark mr-1"></i>
+                        <!-- <span class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark">7</span> -->
+                    </a>
                     
                     <!-- 마이페이지 로그인 안했을 때 =>  로그인 화면으로 이동-->
                    <c:if test = "${empty sessionScope.memberId}" >  
@@ -180,6 +186,7 @@ a:visited {  color : #cfd6e1; }
             </form>
         </div>
     </div>
+
 
 
 
@@ -441,20 +448,19 @@ a:visited {  color : #cfd6e1; }
             </div>
         </div> -->
 
-        <div class="w-100 bg-black py-3">
+        <!--  <div class="w-100 bg-black py-3">
             <div class="container">
                 <div class="row pt-2">
                     <div class="col-12">
                         <p class="text-left text-light">
                             Copyright &copy; 2022 Yonggi Company
                            <!--  | Designed by <a rel="sponsored" href="https://templatemo.com" target="_blank">TemplateMo</a> -->
-                        </p>
+                        <!-- </p>
                     </div>
                 </div>
             </div>
         </div>
-
-    </footer>
+    </footer>-->
     <!-- End Footer -->
 
     <!-- Start Script -->
