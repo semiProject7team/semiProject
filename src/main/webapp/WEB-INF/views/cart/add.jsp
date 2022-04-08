@@ -17,7 +17,7 @@ margin-top: 50px;
 </head>
 <body>
 
-<form action="add.do">
+<%-- <form action="add.do">
 <label>회원아이디</label><input name="memberId" value="${ sessionScope.memberId }">
 <label>상품번호</label><input name="goodsNo" value="2">
 <label>개수</label><input name="cartCnt" value="3">
@@ -46,7 +46,9 @@ margin-top: 50px;
 1.로그인하기
 2.장바구니에 상품담기
 3.장바구니 보기
-4.구매내역 보기
+4.구매내역 보기 --%>
+
+
 
 </body>
 </html>
