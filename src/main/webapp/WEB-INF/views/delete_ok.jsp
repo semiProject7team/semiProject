@@ -3,7 +3,7 @@
 <!-- jstl 사용 -->    
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>     
 <!-- 제이쿼리 라이브러리 추가 -->
-<script type="text/javascript" src="resources/js/jquery-1.7.1.js"></script>
+<script type="text/javascript" src="/7team_project/resources/js/jquery-1.7.1.js"></script>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -217,7 +217,7 @@ https://templatemo.com/tm-559-zay-shop
                 <div class="col-12 col-md-4 mb-4">
                     <div class="card h-100">
                         <a href="shop-single.html">
-                            <img src="resources/imgs/plum.jpg" class="card-img-top" alt="...">
+                            <img src="/7team_project/resources/imgs/plum.jpg" class="card-img-top" alt="...">
                         </a>
                         <div class="card-body">
                             <ul class="list-unstyled d-flex justify-content-between">
@@ -241,7 +241,7 @@ https://templatemo.com/tm-559-zay-shop
                 <div class="col-12 col-md-4 mb-4">
                     <div class="card h-100">
                         <a href="shop-single.html">
-                            <img src="resources/imgs/oatmeal.jpg" class="card-img-top" alt="...">
+                            <img src="/7team_project/resources/imgs/oatmeal.jpg" class="card-img-top" alt="...">
                         </a>
                         <div class="card-body">
                             <ul class="list-unstyled d-flex justify-content-between">
@@ -265,7 +265,7 @@ https://templatemo.com/tm-559-zay-shop
                 <div class="col-12 col-md-4 mb-4">
                     <div class="card h-100">
                         <a href="shop-single.html">
-                            <img src="resources/imgs/tomatoes.jpg" class="card-img-top" alt="...">
+                            <img src="/7team_project/resources/imgs/tomatoes.jpg" class="card-img-top" alt="...">
                         </a>
                         <div class="card-body">
                             <ul class="list-unstyled d-flex justify-content-between">
@@ -291,7 +291,7 @@ https://templatemo.com/tm-559-zay-shop
                 <div class="col-12 col-md-4 mb-4">
                     <div class="card h-100">
                         <a href="shop-single.html">
-                            <img src="resources/imgs/wood.jpg" class="card-img-top" alt="...">
+                            <img src="/7team_project/resources/imgs/wood.jpg" class="card-img-top" alt="...">
                         </a>
                         <div class="card-body">
                             <ul class="list-unstyled d-flex justify-content-between">
@@ -315,7 +315,7 @@ https://templatemo.com/tm-559-zay-shop
                 <div class="col-12 col-md-4 mb-4">
                     <div class="card h-100">
                         <a href="shop-single.html">
-                            <img src="resources/imgs/healthy.jpg" class="card-img-top" alt="...">
+                            <img src="/7team_project/resources/imgs/healthy.jpg" class="card-img-top" alt="...">
                         </a>
                         <div class="card-body">
                             <ul class="list-unstyled d-flex justify-content-between">
@@ -339,7 +339,7 @@ https://templatemo.com/tm-559-zay-shop
                 <div class="col-12 col-md-4 mb-4">
                     <div class="card h-100">
                         <a href="shop-single.html">
-                            <img src="resources/imgs/bacon.jpg" class="card-img-top" alt="...">
+                            <img src="/7team_project/resources/imgs/bacon.jpg" class="card-img-top" alt="...">
                         </a>
                         <div class="card-body">
                             <ul class="list-unstyled d-flex justify-content-between">
@@ -454,20 +454,20 @@ https://templatemo.com/tm-559-zay-shop
             </div>
         </div> -->
 
-        <div class="w-100 bg-black py-3">
+        <!-- <div class="w-100 bg-black py-3">
             <div class="container">
                 <div class="row pt-2">
                     <div class="col-12">
                         <p class="text-left text-light">
                             Copyright &copy; 2022 Yonggi Company
-                            <!--  | Designed by <a rel="sponsored" href="https://templatemo.com" target="_blank">TemplateMo</a>-->
+                             | Designed by <a rel="sponsored" href="https://templatemo.com" target="_blank">TemplateMo</a>
                         </p>
                     </div>
                 </div>
             </div>
         </div>
 
-    </footer>
+    </footer> -->
     <!-- End Footer -->
 
     <!-- Start Script -->

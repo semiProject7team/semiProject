@@ -106,7 +106,7 @@ public class MemberController {
 	@RequestMapping("logout.do")
 	public String logOut(HttpSession session) throws Exception {
 		session.invalidate();// 세션 끊기
-		return "redirect:first.jsp"; // 첫 페이지 리턴
+		return "redirect:index.jsp"; // 메인 페이지 리턴
 	}
 
 	// 회원탈퇴

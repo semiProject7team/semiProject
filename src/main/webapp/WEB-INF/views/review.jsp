@@ -35,9 +35,8 @@ if (request.getAttribute("tot") != null) {
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <link rel="apple-touch-icon" href="resources/img/apple-icon.png">
-<!-- 파비콘 이미지 수정 -->
-<link rel="shortcut icon" type="image/x-icon" href="resources/imgs/favicon.JPG">
-
+<link rel="shortcut icon" type="image/x-icon"
+	href="resources/img/favicon.ico">
 
 <link rel="stylesheet" href="resources/css/bootstrap.min.css">
 <link rel="stylesheet" href="resources/css/templatemo.css">
@@ -74,17 +73,6 @@ https://templatemo.com/tm-559-zay-shop
 <!-- Latest compiled JavaScript -->
 <script
 	src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-
-<!-- css설정 -->
-<style>
-/* login 밑줄 없애기 */
- a {  text-decoration-line: none; }
-/* 아직 방문하지 않은 링크의 글자색을 정의  */
-a:link {  color : #cfd6e1; }
-/* 사용자가 방문한 적이 있는 링크의 글자색을 정의 */
-a:visited {  color : #cfd6e1; }
-
-</style>
 
 
 <%-- JavaScript review_read 이벤트 처리 --%>
@@ -527,7 +515,7 @@ a:visited {  color : #cfd6e1; }
 	</div>
 	
 	<!-- Start Footer -->
-	<footer class="bg-dark" id="tempaltemo_footer">
+	<!-- <footer class="bg-dark" id="tempaltemo_footer">
 		<div class="container">
 			<div class="row">
 
@@ -633,7 +621,7 @@ a:visited {  color : #cfd6e1; }
 			</div>
 		</div>
 
-	</footer>
+	</footer> -->
 	<!-- End Footer -->
 
 	<!-- Start Script -->
