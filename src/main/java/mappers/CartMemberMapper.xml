@@ -9,7 +9,13 @@
   		SELECT member_id, member_name, member_tel, member_addr, member_addr2, member_addr3
   		FROM member
   		WHERE member_id = #{memberId}
-  	
-  	</select>
+  		</select>
+
+	<!-- 아이디 중복확인 -->
+	<select id="cartidCheck" resultType="MemberVO">
+		SELECT *
+		FROM member
+		WHERE member_id = #{memberId}
+	</select>
  
 </mapper>

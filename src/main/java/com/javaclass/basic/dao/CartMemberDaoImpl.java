@@ -17,4 +17,9 @@ public class CartMemberDaoImpl implements CartMemberDao {
 		return mybatis.selectOne("memberMapper2.getMemberInfo2", memberId);
 	}
 
+	@Override
+	public MemberVO idCheck_cart(MemberVO vo) {
+		return mybatis.selectOne("memberMapper2.cartidCheck", vo);
+	}
+
 }

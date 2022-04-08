@@ -18,4 +18,9 @@ public class CartMemberServiceImpl implements CartMemberService {
 		return memberDao2.getMemberInfo(memberId);
 	}
 
+	
+	//장바구니 아이디 체크  
+		public MemberVO idCheck_cart(MemberVO vo) {
+			return memberDao2.idCheck_cart(vo);
+		}
 }
