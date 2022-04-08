@@ -9,19 +9,24 @@
 
 
 
-<link rel="apple-touch-icon" href="/7team_project/img/apple-icon.png">
-    <link rel="shortcut icon" type="image/x-icon" href="/7team_project/img/favicon.ico">
+<link rel="apple-touch-icon" href="resources/img/apple-icon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="resources/img/favicon.ico">
+    
+    
+<!-- 파비콘 이미지 수정 -->
+<link rel="shortcut icon" type="image/x-icon" href="resources/imgs/favicon.JPG">
+    
 
-    <link rel="stylesheet" href="/7team_project/resources/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/7team_project/resources/css/templatemo.css">
-    <link rel="stylesheet" href="/7team_project/resources/css/custom.css">
+    <link rel="stylesheet" href="resources/css/bootstrap.min.css">
+    <link rel="stylesheet" href="resources/css/templatemo.css">
+    <link rel="stylesheet" href="resources/css/custom.css">
 
     <!-- Load fonts style after rendering the layout styles -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
-    <link rel="stylesheet" href="/7team_project/resources/css/fontawesome.min.css">
+    <link rel="stylesheet" href="resources/css/fontawesome.min.css">
    
     
-    <link rel="stylesheet" href="/7team_project/resources/css/test.css">
+    <link rel="stylesheet" href="resources/css/test.css">
 
 <!-- css -->
 <style type="text/css">
@@ -69,19 +74,30 @@ https://templatemo.com/tm-559-zay-shop
 </head>
 
 <body>
-    <!-- Start Top Nav -->
+    <!-- 헤더부분 -->
+<!-- Start Top Nav -->
     <nav class="navbar navbar-expand-lg bg-dark navbar-light d-none d-lg-block" id="templatemo_nav_top">
         <div class="container text-light">
             <div class="w-100 d-flex justify-content-between">
                 <div>
                     <i class="fa fa-envelope mx-2"></i>
-                     <a class="navbar-sm-brand text-light text-decoration-none" href="yonggi@company.com">yonggi@company.com</a>
+                    <a class="navbar-sm-brand text-light text-decoration-none" href="yonggi@company.com">yonggi@company.com</a>
                     <i class="fa fa-phone mx-2"></i>
-                     <a class="navbar-sm-brand text-light text-decoration-none" href="010-1234-5678">010-1234-5678</a>
+                    <a class="navbar-sm-brand text-light text-decoration-none" href="010-1234-5678">010-1234-5678</a>
                 </div>
                 <div>
-                	<a  class="logincolor" href="userLogin.do"> login </a>
-                  <!--   <a class="text-light" href="https://fb.com/templatemo" target="_blank" rel="sponsored"><i class="fab fa-facebook-f fa-sm fa-fw me-2"></i></a>
+                
+                   <!-- 로그인 안 했을때 => 로그인 표시 -->
+                   <c:if test = "${empty sessionScope.memberId}" >   
+                    <a href="userLogin.do"> login </a>
+                     </c:if>
+                   
+                   <!-- 로그인 했을때 => 로그아웃 표시 -->
+                   <c:if test = "${not empty sessionScope.memberId}" >   
+                    <a href="logout.do"> logout </a>
+                   </c:if>
+                
+            <!--<a class="text-light" href="https://fb.com/templatemo" target="_blank" rel="sponsored"><i class="fab fa-facebook-f fa-sm fa-fw me-2"></i></a>
                     <a class="text-light" href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram fa-sm fa-fw me-2"></i></a>
                     <a class="text-light" href="https://twitter.com/" target="_blank"><i class="fab fa-twitter fa-sm fa-fw me-2"></i></a>
                     <a class="text-light" href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin fa-sm fa-fw"></i></a> -->
@@ -92,11 +108,12 @@ https://templatemo.com/tm-559-zay-shop
     <!-- Close Top Nav -->
 
 
-    <!-- Header -->
+
+     <!-- Header -->
     <nav class="navbar navbar-expand-lg navbar-light shadow">
         <div class="container d-flex justify-content-between align-items-center">
 
-            <a class="navbar-brand text-success logo h1 align-self-center" href="index.jsp">
+            <a class="navbar-brand text-success logo h1 align-self-center" href="first.jsp">
                 YongGI
             </a>
 
@@ -114,14 +131,14 @@ https://templatemo.com/tm-559-zay-shop
                             <a class="nav-link" href="review.do">review</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="">campaign</a>
+                            <a class="nav-link" href="shopList/shop.do">campaign</a>
                         </li>
                        <!--  <li class="nav-item">
                             <a class="nav-link" href="">장바구니</a>
                         </li> -->
                     </ul>
                 </div>
-                <div class="navbar align-self-center d-flex">
+               <div class="navbar align-self-center d-flex">
                     <div class="d-lg-none flex-sm-fill mt-3 mb-4 col-7 col-sm-auto pr-3">
                         <div class="input-group">
                             <input type="text" class="form-control" id="inputMobileSearch" placeholder="Search ...">
@@ -130,24 +147,51 @@ https://templatemo.com/tm-559-zay-shop
                             </div>
                         </div>
                     </div>
-                     <!-- start 오른쪽 아이콘  -->
-                    <!-- <a class="nav-icon d-none d-lg-inline" href="#" data-bs-toggle="modal" data-bs-target="#templatemo_search">
+                   <!-- <a class="nav-icon d-none d-lg-inline" href="#" data-bs-toggle="modal" data-bs-target="#templatemo_search">
                         <i class="fa fa-fw fa-search text-dark mr-2"></i>
-                    </a> -->
+                    </a>  -->
+                    
+                    
+                   <%--  <!-- 장바구니 로그인 안했을 때 => 로그인 화면으로 이동 -->
+                   <c:if test = "${empty sessionScope.memberId}" > 
+                    <a class="nav-icon position-relative text-decoration-none" href="userLogin.do">
+                        <i class="fa fa-fw fa-cart-arrow-down text-dark mr-1"></i>
+                        <!-- <span class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark">7</span> -->
+                    </a>
+                    </c:if>
+                    <!-- 장바구니 로그인 했을 때 =>  이동 cart.do로 이동-->
+                   <c:if test = "${not empty sessionScope.memberId}" >  
+                    <a class="nav-icon position-relative text-decoration-none" href="cart.do?memberId=${sessionScope.memberId}">
+                        <i class="fa fa-fw fa-cart-arrow-down text-dark mr-1"></i>
+                        <!-- <span class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark">7</span> -->
+                    </a>
+                    </c:if> --%>
+                    
                     <!-- 장바구니 아이콘 누르면 장바구니로 이동 session에 저장된 memberId가져가야함 요청값 : cart.do(CartController) -->
                     <a class="nav-icon position-relative text-decoration-none" href="cart.do?memberId=${ sessionScope.memberId }">
                         <i class="fa fa-fw fa-cart-arrow-down text-dark mr-1"></i>
                         <!-- <span class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark">7</span> -->
                     </a>
-                    <a class="nav-icon position-relative text-decoration-none" href="#">
+                    
+                    <!-- 마이페이지 로그인 안했을 때 =>  로그인 화면으로 이동-->
+                   <c:if test = "${empty sessionScope.memberId}" >  
+                    <a class="nav-icon position-relative text-decoration-none" href="userLogin.do">
                         <i class="fa fa-fw fa-user text-dark mr-3"></i>
                         <!-- <span class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark">+99</span> -->
                     </a> 
-                    <!-- close 오른쪽 아이콘  -->
-                </div>
-            </div>
+                    </c:if>
+                    
+                    <!-- 마이페이지 로그인 했을 때 =>  mypage.do로 이동-->
+                   <c:if test = "${not empty sessionScope.memberId}" > 
+                    <a class="nav-icon position-relative text-decoration-none" href="mypage.do">
+                        <i class="fa fa-fw fa-user text-dark mr-3"></i>
+                        <!-- <span class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark">+99</span> -->
+                    </a> 
+                    </c:if>
+                </div>      
+            </div>   
 
-        </div>
+        </div> 
     </nav>
     <!-- Close Header -->
 
@@ -167,7 +211,6 @@ https://templatemo.com/tm-559-zay-shop
             </form>
         </div>
     </div>
-
 
 <!-- Start Content -->
     <section id="container" class="active">
