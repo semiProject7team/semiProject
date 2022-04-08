@@ -1,0 +1,40 @@
+/*
+Custom Css
+*/
+
+/* 후기페이지 */
+
+.maincontent  {border : 3px solid #40A940; background-color : #40A940; width:392px; height:430px;
+				margin: 100px 50px 50px 900px; float:left; border-radius:10px}
+
+.hugicontent {border : 3px solid #40A940; background-color : white; width:680px; height:530px;
+				margin: 50px 50px 50px 100px; border-radius:10px}
+				
+.maintext {border-radius:10px; width:388px; height:330px;}
+
+.so {margin: auto; border-radius:10px; }
+
+.siltext {border-radius:10px; margin: 10px 0px 0px 0px;}
+
+.buyno {border-radius:10px; margin: 20px 0px 0px 0px;}
+
+.idcheck {border-radius:10px;}
+
+.hugitext {border-radius:10px;  position: absolute; left: 100px; top: 150px}
+
+.hugi  {border : 1px solid #2C952C; position: relative; top: -480px; left: 320px; }
+
+.hugi td {border : 1px solid #40A940; border-radius:5px;}
+
+.hugiline {background-color:#40A940; color:white; border : 1px solid white;}
+
+/* 후기상세페이지 */
+
+.hugidifi {border : 3px solid #40A940; background-color : #40A940; width:392px; height:530px;
+				 float:left; border-radius:10px; color:white;}
+				
+.content {border-radius:10px; width:388px; height:330px; color:white;}
+
+.su {margin: auto; border-radius:10px; }
+
+.writer,.title,.date {border-radius:10px; margin: 10px 0px 0px 0px; color:white;}
