@@ -1,7 +1,7 @@
 package com.javaclass.basic.vo;
 
 public class OrdersVO {
-	private int orderNo;
+	private String orderNo;
 	private String addrName;
 	private int orderAddr;
 	private String orderAddr2;
@@ -12,13 +12,19 @@ public class OrdersVO {
 	
 	public OrdersVO() {}
 
-	public int getOrderNo() {
+	
+
+	public String getOrderNo() {
 		return orderNo;
 	}
 
-	public void setOrderNo(int orderNo) {
+
+
+	public void setOrderNo(String orderNo) {
 		this.orderNo = orderNo;
 	}
+
+
 
 	public String getAddrName() {
 		return addrName;

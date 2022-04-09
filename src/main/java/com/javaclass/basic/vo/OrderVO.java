@@ -25,16 +25,16 @@ public class OrderVO {
 	/* 회원 상세주소 */
 	private String orderAddr3;
 	
-	/* 주문 날짜 */
-	private Date orderDate;
-	
-	/* DB테이블 존재 하지 않는 데이터 */
-	
 	/* 주문 상품 */
 	private List<OrderItemVO> orders;	
 	
 	/* 배송비 */
 	private int deliveryCost;
+	
+	/* 주문 날짜 */
+	private Date orderDate;
+	
+	/* DB테이블 존재 하지 않는 데이터 */
 	
 	/* 판매가(모든 상품 비용) */
 	private int orderSalePrice;

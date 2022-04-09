@@ -4,13 +4,15 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>     
 <!DOCTYPE html>
 <html>
-<head>
+<head> 
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title> 회원가입 </title>
+<!-- 파비콘 이미지 수정 -->
+<link rel="shortcut icon" type="image/x-icon" href="resources/imgs/favicon.JPG">
 
 <!-- CSS 설정-->
 <style type="text/css">
-
+ 
 	html { height: 100%; } 
 	body { height: 100%; 
 			margin: 0; 
@@ -77,7 +79,7 @@
 <script src="http://dmaps.daum.net/map_js_init/postcode.v2.js"></script>
 
 <!-- 제이쿼리 라이브러리 추가 -->
-<script type="text/javascript" src="/7team_project/resources/js/jquery-1.7.1.js"></script>
+<script type="text/javascript" src="resources/js/jquery-1.7.1.js"></script>
 
 <!-- 제이쿼리 코딩 -->
 <script type="text/javascript">

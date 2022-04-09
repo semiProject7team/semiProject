@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="orderMapper">
+	
+	<select id="getGoodsInfo2" resultType="OrderPageItemVO">
+		SELECT goods_no, goods_name , goods_price
+		FROM goods
+		WHERE goods_no = #{goodsNo}	
+	</select>
+	
+	<select id="getOrderInfo" resultType="OrderItemVO">
+	
+		select goods_no, goods_price
+		from goods 
+		where goods_no = #{goodsNo}
+	</select>
+	
+	<!-- 주문 테이블 등록 -->
+	<insert id="enrollOrder">
+		INSERT INTO orders(order_no, addr_name, member_id, order_addr, order_addr2, order_addr3, order_date)
+    	values(#{orderNo},#{addrName}, #{memberId}, #{orderAddr}, #{orderAddr2}, #{orderAddr3},sysdate)
+	</insert>
+	
+	
+	
+	<!-- 주문 아이템 테이블 등록 -->
+	<insert id="enrollOrderItem">
+	
+		INSERT INTO order_goods(og_no,order_no, goods_no, og_cnt, og_price)
+		values(og_seq.nextval,#{orderNo}, #{goodsNo}, #{ogCnt}, #{ogPrice})
+	
+	</insert>
+	
+	<!-- 주문번호 목록 가져오기 -->
+		<select id="getOrderNo" parameterType="OrderVO" resultType="OrderVO">
+		
+		SELECT order_no,order_date,addr_name
+		FROM orders
+		WHERE member_id=#{memberId}
+		ORDER BY order_date DESC
+		
+		</select>
+		
+		<!-- 주문제품 목록 가져오기 -->
+		<select id="getOrderItemList" parameterType="OrderItemVO" resultType="OrderItemVO">
+		
+		SELECT o.og_no,o.goods_no,o.og_cnt,o.og_price,g.goods_name
+		FROM order_goods o LEFT OUTER JOIN goods g
+        on o.goods_no=g.goods_no
+		WHERE order_no=#{orderNo}
+		
+		</select>
+		
+		<!-- 주문제품 이름 가져오기 -->
+		<select id="getOrderItemName" parameterType="string" resultType="GoodsVO">
+		
+		SELECT goods_name
+		FROM goods
+		WHERE  goods_no=#{goodsNo}
+				
+		</select>
+</mapper>

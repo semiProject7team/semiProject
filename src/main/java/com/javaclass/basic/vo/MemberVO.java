@@ -14,14 +14,6 @@ public class MemberVO {
 	private String memberGrade;
 	private String memberSearch;
 	
-	@Override
-	public String toString() {
-		return "MemberVO [no=" + no + ", memberId=" + memberId + ", memberPass=" + memberPass + ", memberName="
-				+ memberName + ", memberGender=" + memberGender + ", memberTel=" + memberTel + ", memberAddr="
-				+ memberAddr + ", memberAddr2=" + memberAddr2 + ", memberAddr3=" + memberAddr3 + ", memberOrder="
-				+ memberOrder + ", memberGrade=" + memberGrade + ", memberSearch=" + memberSearch + "]";
-	}
-
 	public MemberVO() {}
 	
 	public String getMemberSearch() {
