@@ -62,13 +62,18 @@ public class ManagerDao {
 	}
 	
 	public void deleteMember(MemberVO vo) {
-		List<OrdersVO> list = sql.selectList("managerMapper.getOrdersByMemberId",vo);
+		//회원번호대로 주문서번호 얻어오기 
+		List<OrdersVO> list = sql.selectList("managerMapper.getOrdersByMemberId",vo); 
+		//주문서번호대로 후기테이블이랑 주문상품테이블 상관정보 삭제
 		for(OrdersVO vv : list) {
 			sql.delete("managerMapper.deleteMemberInOrderGoods",vv);
 			sql.delete("managerMapper.deleteMemberInReview",vv);
 		}
+		//주문서테이블 삭제
 		sql.delete("managerMapper.deleteMemberInOrders",vo);
+		//장바구니테이블 삭제
 		sql.delete("managerMapper.deleteMemberInCart",vo);
+		//마지막 회원정보 삭제
 		sql.delete("managerMapper.deleteMember",vo);
 	}
 	
@@ -89,10 +94,15 @@ public class ManagerDao {
 	}
 	
 	public void deleteGoods(GoodsVO vo) {
+		//order_goods 테이블 상품정보삭제
 		sql.delete("managerMapper.deleteGoodsInOrderGoods",vo);
+		//review 테이블 상품정보삭제
 		sql.delete("managerMapper.deleteGoodsInReview",vo);
+		//cart 테이블 상품정보삭제
 		sql.delete("managerMapper.deleteGoodsInCart",vo);
+		//add_info 테이블 상품정보삭제
 		sql.delete("managerMapper.deleteGoodsInAdd",vo);
+		//마지막 goods 테이블 삭제
 		sql.delete("managerMapper.deleteGoods",vo);
 	}
 	

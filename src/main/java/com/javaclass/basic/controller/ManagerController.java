@@ -56,7 +56,6 @@ public class ManagerController {
 	@RequestMapping(value="memberSearch.do",produces = "application/text; charset=UTF-8")
 	@ResponseBody
 	public String memberSearch(MemberVO vo,String page ) {
-
 		String result = "";
 		if(vo.getMemberSearch() == "") {
 			if(page==null) {
@@ -70,7 +69,8 @@ public class ManagerController {
 				result += "<tr>\r\n" + 
 						"															<td>"+vvv.getNo()+"</td>\r\n" + 
 						"															<td>"+vvv.getMemberId()+"</td>\r\n" + 													
-						"															<td><a href='manager_memberView.do?memberId="+vvv.getMemberId()+"'>"+vvv.getMemberName()+"</a></td>\r\n" +
+						"															<td><a href='manager_memberView.do?memberId="
+						+vvv.getMemberId()+"'>"+vvv.getMemberName()+"</a></td>\r\n" +
 						"															<td>"+vvv.getMemberGender()+"</td>\r\n" + 
 						"															<td>"+vvv.getMemberTel()+"</td>\r\n" + 
 						"															<td>"+vvv.getMemberAddr()+"</td>\r\n" + 
@@ -85,7 +85,8 @@ public class ManagerController {
 				result += "<tr>\r\n" + 
 						"															<td></td>\r\n" + 
 						"															<td>"+vv.getMemberId()+"</td>\r\n" + 													
-						"															<td><a href='manager_memberView.do?memberId="+vv.getMemberId()+"'>"+vv.getMemberName()+"</a></td>\r\n" +
+						"															<td><a href='manager_memberView.do?memberId="
+						+vv.getMemberId()+"'>"+vv.getMemberName()+"</a></td>\r\n" +
 						"															<td>"+vv.getMemberGender()+"</td>\r\n" + 
 						"															<td>"+vv.getMemberTel()+"</td>\r\n" + 
 						"															<td>"+vv.getMemberAddr()+"</td>\r\n" + 
@@ -103,15 +104,18 @@ public class ManagerController {
 	 *회원관리 정렬 기능 
 	 * */
 	@RequestMapping(value = "memberSelectOption.do",produces = "application/text; charset=UTF-8")
-	@ResponseBody
-	public String selectOption(MemberVO vo) {
+	@ResponseBody	//페이지 옮기지 않음 ajax로 처리
+	public String selectOption(MemberVO vo) {  //vo 안에 memberOrder 변수 지정
 		List<MemberVO> list = service.selectOption(vo);
-		String result = "";
+		String result = "";   //변수선언 
+		//list 출력
 		for(MemberVO vv : list) {
 			result += "<tr>\r\n" + 
 					"															<td></td>\r\n" + 
-					"															<td>"+vv.getMemberId()+"</td>\r\n" + 													
-					"															<td><a href='manager_memberView.do?memberId="+vv.getMemberId()+"'>"+vv.getMemberName()+"</a></td>\r\n" +
+					"															<td>"+vv.getMemberId()+"</td>\r\n" + 
+					//a 테그
+					"															<td><a href='manager_memberView.do?memberId="
+					+vv.getMemberId()+"'>"+vv.getMemberName()+"</a></td>\r\n" +
 					"															<td>"+vv.getMemberGender()+"</td>\r\n" + 
 					"															<td>"+vv.getMemberTel()+"</td>\r\n" + 
 					"															<td>"+vv.getMemberAddr()+"</td>\r\n" + 
@@ -664,7 +668,7 @@ public class ManagerController {
 	 * 매장정보 얻어오기
 	 * */
 	@RequestMapping("manager_addInfo.do")
-	public void managerAddInfo(Model m,AddInfoVO vo,String page) {
+	public void managerAddInfo(Model m,AddInfoVO vo,String page) { //vo 객체 shopNo 변수 지정
 		m.addAttribute("getShopInfoByShopNo", service.getShopInfoByShopNo(vo));
 		/*사이즈값들 goodsSize 지정
 		 * nlist -- addInfoVO

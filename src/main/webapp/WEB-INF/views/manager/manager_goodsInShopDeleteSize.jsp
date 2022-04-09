@@ -47,7 +47,7 @@
                                 <div class="col-md-8">
                                     <div class="card">
                                         <div class="card-header">
-                                            <h4 class="mb-0">추가할 상품정보 입력하세요</h4>
+                                            <h4 class="mb-0">삭제할 상품정보 입력하세요</h4>
                                         </div>
                                         <div class="card-body">
                                         
@@ -56,9 +56,9 @@
                                             	<input type="hidden" name="shopNo" id="shopNo" value="${param.shopNo}" />
                                                 <input type="hidden" name="goodsNo" id="goodsNo" value="${param.goodsNo}" />
                                                 <div class="mb-3">
-                                                 	 <label >추가할사이즈</label>
+                                                 	 <label >삭제할사이즈</label>
                                                      <select class="form-control" id="sizeSelectOption" name="goodsSize">
-                                                     	<option>추가 할 사이즈를 선택하세요.</option>
+                                                     	<option>삭제 할 사이즈를 선택하세요.</option>
                                                      	<c:forEach var="sizeVO" items="${goodsSizeList}" >
                                                      		<option>${sizeVO.goodsSize}</option>
                                                      	</c:forEach>
