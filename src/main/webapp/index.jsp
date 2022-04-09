@@ -1,36 +1,108 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+ <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
 <html>
 
 <head>
+
+<!-- css설정 -->
+<style>
+/* login 밑줄 없애기 */
+ a {  text-decoration-line: none; }
+/* 아직 방문하지 않은 링크의 글자색을 정의  */
+a:link {  color : #cfd6e1; }
+/* 사용자가 방문한 적이 있는 링크의 글자색을 정의 */
+a:visited {  color : #cfd6e1; }
+
+
+
+</style>
+
+<!-- 헤더부분 -->
+<!-- Start Top Nav -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-light d-none d-lg-block" id="templatemo_nav_top">
+        <div class="container text-light">
+            <div class="w-100 d-flex justify-content-between">
+                <div>
+                    <i class="fa fa-envelope mx-2"></i>
+                    <a class="navbar-sm-brand text-light text-decoration-none" href="yonggi@company.com">yonggi@company.com</a>
+                    <i class="fa fa-phone mx-2"></i>
+                    <a class="navbar-sm-brand text-light text-decoration-none" href="010-1234-5678">010-1234-5678</a>
+                </div>
+                <div>
+                
+                   <!-- 로그인 안 했을때 => 로그인 표시 -->
+                   <c:if test = "${empty sessionScope.memberId}" >   
+                    <a href="userLogin.do"> login </a>
+                     </c:if>
+                   
+                   <!-- 로그인 했을때 => 로그아웃 표시 -->
+                   <c:if test = "${not empty sessionScope.memberId}" >   
+                    <a href="logout.do"> logout </a>
+                   </c:if>
+                
+            <!--<a class="text-light" href="https://fb.com/templatemo" target="_blank" rel="sponsored"><i class="fab fa-facebook-f fa-sm fa-fw me-2"></i></a>
+                    <a class="text-light" href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram fa-sm fa-fw me-2"></i></a>
+                    <a class="text-light" href="https://twitter.com/" target="_blank"><i class="fab fa-twitter fa-sm fa-fw me-2"></i></a>
+                    <a class="text-light" href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin fa-sm fa-fw"></i></a> -->
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Close Top Nav -->
+
+
+
+
+    <!-- Close Header -->
+
+    <!-- Modal -->
+    <div class="modal fade bg-white" id="templatemo_search" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="w-100 pt-1 mb-5 text-right">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form action="" method="get" class="modal-content modal-body border-0 p-0">
+                <div class="input-group mb-2">
+                    <input type="text" class="form-control" id="inputModalSearch" name="q" placeholder="Search ...">
+                    <button type="submit" class="input-group-text bg-success text-light">
+                        <i class="fa fa-fw fa-search text-white"></i>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
  <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
+    
 
+    <!-- 파비콘 이미지 수정 -->
+    <link rel="shortcut icon" type="image/x-icon" href="resources/imgs/favicon.JPG">
+    <link rel="apple-touch-icon" href="/7team_project/resources/assets/img/apple-icon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="/7team_project/resources/assets/img/favicon.ico">
 
-    <link rel="apple-touch-icon" href="resources/assets/img/apple-icon.png">
-    <link rel="shortcut icon" type="image/x-icon" href="resources/assets/img/favicon.ico">
-
-    <link rel="stylesheet" href="resources/assets/css/shop.css">
-    <link rel="stylesheet" href="resources/assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="resources/assets/css/templatemo.css">
-    <link rel="stylesheet" href="resources/assets/css/custom.css">
+    <link rel="stylesheet" href="/7team_project/resources/assets/css/shop.css">
+    <link rel="stylesheet" href="/7team_project/resources/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/7team_project/resources/assets/css/templatemo.css">
+    <link rel="stylesheet" href="/7team_project/resources/assets/css/custom.css">
 
     <!-- Load fonts style after rendering the layout styles -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
-    <link rel="stylesheet" href="resources/assets/css/fontawesome.min.css">
-<title>YongGI Shop</title> 
+    <link rel="stylesheet" href="/7team_project/resources/assets/css/fontawesome.min.css">
+<title>YonGI Shop</title>
 </head>
 <body>
-<!-- Start Top Nav -->
+<!--  Start Top Nav 
        <nav class="navbar navbar-expand-lg bg-dark navbar-light d-none d-lg-block" id="templatemo_nav_top">
         <div class="container text-light">
             <div class="w-100 d-flex justify-content-between">
-                  <!--   <i class="fa fa-envelope mx-2"></i> -->
-                    <a class="navbar-sm-brand text-light text-decoration-none" href="mailto:info@company.com"><strong> ★Yong gi 매장 방문을 환영합니다!</strong></a>
-                    <!-- i class="fa fa-phone mx-2"></i> -->
-                   <!--  <a class="navbar-sm-brand text-light text-decoration-none" href="tel:010-020-0340">010-020-0340</a> -->
+                    <i class="fa fa-envelope mx-2"></i>
+                    <a class="navbar-sm-brand text-light text-decoration-none" href="mailto:info@company.com"><strong> ★YonGI Shop 방문을 환영합니다!</strong></a>
+                    i class="fa fa-phone mx-2"></i>
+                    <a class="navbar-sm-brand text-light text-decoration-none" href="tel:010-020-0340">010-020-0340</a>
                 </div>
                 <div style="width:300px;">
                     <a class="text-light" href="https://fb.com/templatemo" target="_blank" rel="sponsored"><i class="fab fa-facebook-f fa-sm fa-fw me-2"></i></a>
@@ -38,11 +110,11 @@
                     <a class="text-light" href="https://twitter.com/" target="_blank"><i class="fab fa-twitter fa-sm fa-fw me-2"></i></a>
                     <a class="text-light" href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin fa-sm fa-fw"></i></a>
                     
-                    <!-- <button type='submit'></button> -->
+                    <button type='submit'></button>
                 </div>
             </div>
         
-    </nav> 
+    </nav>  -->
     
     <!-- Close Top Nav -->
 
@@ -52,7 +124,7 @@
         <div class="container d-flex justify-content-between align-items-center">
 
             <a text-align='center'class="navbar-brand text-success logo h1 align-self-center" href="index.html">
-                 저희 매장 방문을 진심으로 환영합니다.
+                 저희 매장 방문을 진심으로 환영합니다...
             </a> -->
 
 <!--              <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#templatemo_main_nav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -69,7 +141,7 @@
                             <a class="nav-link" href="about.do">상품보기</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="shopList/shop.do">용기매장리스트</a>
+                            <a class="nav-link" href="/7team_project/shopList/shop.do">용기매장리스트</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="contact.do">오시는 길</a>
@@ -134,11 +206,11 @@
                 <div class="container">
                     <div class="row p-5">
                         <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
-                            <img class="img-fluid" src="resources/assets/img/gurut5.jpg" style= "float:right; width:522px; height:350px; vertical-align: middle;" alt="사진1">
+                            <img class="img-fluid" src="/7team_project/resources/assets/img/gurut5.jpg" style= "float:right; width:522px; height:350px; vertical-align: middle;" alt="사진1">
                         </div>
                         <div class="col-lg-6 mb-0 d-flex align-items-center">
                             <div class="text-align-left align-self-center">
-                                <h3 class="h1 text-success"><b>건강</b>하고, <b>깔끔</b>한 용기</h3> <h3></h3>
+                                <h1 class="text-success"><b>건강</b>하고, <b>깔끔</b>한 용기</h1> <h3></h3>
                                 <h3 class="h2">A <b>healthy</b> and <b>clean</b> dish</h3>
                                 <p>
                                     재활용이 가능한 자연에서 온 유리소재를 선택하고, <br/>
@@ -153,11 +225,11 @@
                 <div class="container">
                     <div class="row p-5">
                         <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
-                            <img class="img-fluid" src="resources/assets/img/gurut2.png" style= "float:right; width:522px; height:350px; vertical-align: middle;" alt="사진2">
+                            <img class="img-fluid" src="/7team_project/resources/assets/img/gurut2.png" style= "float:right; width:522px; height:350px; vertical-align: middle;" alt="사진2">
                         </div>
                         <div class="col-lg-6 mb-0 d-flex align-items-center">
                             <div class="text-align-left">
-                                <h1 class="h1">다양한 종류 및 사이즈</h1>
+                                <h1 class="text-success">다양한 종류 및 사이즈</h1>
                                 <h3 class="h2">Various types, meticulous size</h3>
                                 <p>
                                    저희 매장은 재활용이 가능한 자연에서 온 유리소재를 선택하고, 충격에 강한 강화유리로 내구성을 더하고 <strong>디테일과 세심한 디자인</strong> 적용 <br/>
@@ -172,11 +244,11 @@
                 <div class="container">
                     <div class="row p-5">
                         <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
-                            <img class="img-fluid" src="resources/assets/img/gurut3.png" style= "float:right; width:522px; height:350px; vertical-align: middle;" alt="사진2">
+                            <img class="img-fluid" src="/7team_project/resources/assets/img/gurut3.png" style= "float:right; width:522px; height:350px; vertical-align: middle;" alt="사진2">
                         </div>
                         <div class="col-lg-6 mb-0 d-flex align-items-center">
                             <div class="text-align-left">
-                                <h1 class="h1">친환경 그릇 판매</h1>
+                                <h1 class="text-success">친환경 그릇 판매</h1>
                                 <h3 class="h2">sales of eco-friendly containers </h3>
                                 <p>
                                     저희 매장 용기내 캠페인 전용 용기 판매 사이트입니다.
@@ -199,29 +271,29 @@
 
 
     <!-- Start Categories of The Month -->
-    <div class='yee'>
+    <div class='containerYee'>
     <section class="container py-5">
         <div class="row text-center pt-3">
             <div class="col-lg-6 m-auto">
-                <h1 class="h1"><strong>페이지 바로가기</strong></h1>
-                <p>
-                    아래 버튼을 눌러 상품페이지 및 매장리스트 검색 페이지로<br/> 바로 이동하실 수 있습니다.
-                </p>
+                <h1 class="text-success"><b>페이지 바로가기</b></h1><br/><br/>
+               
+                    <h4>아래 버튼을 클릭하여 상품페이지 및 매장리스트<br/> 검색 페이지로 바로 이동하실 수 있습니다.</h4>
+                
             </div>
         </div>
         <div class="row">
             <div class="col-12 col-md-6 p-5 mt-3" style= "text-align: center;">
-                <a href="#"><img src="resources/assets/img/gurut6.png"  class="rounded-circle img-fluid border" style= "width:454px; height:385px; vertical-align: middle;" alt="사진1"></a>
-                <h5 class="text-center mt-3 mb-3">상품보기</h5>
-                <p class="text-center"><a class="btn btn-success" href="list.do">상품 페이지 바로가기</a></p>
+                <a href="#"><img src="/7team_project/resources/assets/img/gurut6.png"  class="rounded-circle img-fluid border" style= "width:454px; height:385px; vertical-align: middle;" alt="사진1"></a>
+                <h2 class="text-center mt-3 mb-3"><b>상품보기</b></h2>
+                <p class="text-center"><a class="btn btn-success" href="list.do"><b>상품 페이지 바로가기</b></a></p>
             </div>
             <div class="col-12 col-md-5 p-5 mt-3">
-                <a href="#"><img src="resources/assets/img/gurut7.jpg"  class="rounded-circle img-fluid border"></a>
-                <h2 class="h5 text-center mt-3 mb-3">매장리스트보기</h2>
-                <p class="text-center"><a class="btn btn-success" href="shopList/shop.do">매장 리스트 검색 바로가기</a></p>
+                <a href="#"><img src="/7team_project/resources/assets/img/gurut7.jpg"  class="rounded-circle img-fluid border"></a>
+                <h2 class="text-center mt-3 mb-3"><b>매장 리스트 보기</b></h2>
+                <p class="text-center"><a class="btn btn-success" href="/7team_project/shopList/shop.do">매장 리스트 검색 바로가기</a></p>
             </div>
         </div>
-    </section>  
+    </section>
     </div>
     <!-- End Categories of The Month -->
 
@@ -234,8 +306,8 @@
                 <div class="col-lg-6 m-auto">
                     <h1 class="h1" style=" font-family:궁서; font-weight: bold;">저희 매장은...</h1>
                     <p>
-                        음식 포장으로 발생하는 불필요한 쓰레기를 줄이자는 취지에서 천 주머니,<br/> 에코백, 다회용기 등에 식재료나 음식을 포장해 오는 용기내 챌린지<br/>
-                        운동의 이념을 바탕으로 밑의 3가지 마음을 담아 정성껏 제작하였습니다.
+                        <b>음식 포장으로 발생하는 불필요한 쓰레기를 줄이자는 취지에서 천 주머니,<br/> 에코백, 다회용기 등에 식재료나 음식을 포장해 오는 용기내 챌린지<br/>
+                        운동의 이념을 바탕으로 밑의 3가지 마음을 담아 정성껏 제작하였습니다.</b>
                     </p>
                 </div>
             </div>
@@ -243,7 +315,7 @@
                 <div class="col-12 col-md-4 mb-4">
                     <div class="card h-100">
                         <!-- <img src="shop-single.html"> -->
-                            <img src="resources/assets/img/kk1.png" style= "height:410px;" class="card-img-top" alt="...">
+                            <img src="/7team_project/resources/assets/img/kk1.png" style= "height:410px;" class="card-img-top" alt="...">
                         </a>
                         <div class="card-body">
                             <ul class="list-unstyled d-flex justify-content-between">
@@ -267,7 +339,7 @@
                 <div class="col-12 col-md-4 mb-4">
                     <div class="card h-100">
                         <a href="shop-single.html">
-                            <img src="resources/assets/img/kk2.png" style= "height:410px;" class="card-img-top" alt="...">
+                            <img src="/7team_project/resources/assets/img/kk2.png" style= "height:410px;" class="card-img-top" alt="...">
                         </a>
                         <div class="card-body">
                             <ul class="list-unstyled d-flex justify-content-between">
@@ -293,7 +365,7 @@
                 <div class="col-12 col-md-4 mb-4">
                     <div class="card h-100">
                         <a href="shop-single.html">
-                            <img src="resources/assets/img/kk3.png" style= "height:410px;" class="card-img-top" alt="...">
+                            <img src="/7team_project/resources/assets/img/kk3.png" style= "height:410px;" class="card-img-top" alt="...">
                         </a>
                         <div class="card-body">
                             <ul class="list-unstyled d-flex justify-content-between">
@@ -347,7 +419,7 @@
 
 
     <!-- Start Footer -->
-    <footer class="bg-dark" id="tempaltemo_footer">
+   <!--  <footer class="bg-dark" id="tempaltemo_footer">
         <div class="container">
             <div class="row">
 
@@ -438,11 +510,11 @@
             </div>
         </div>
 
-    </footer>
-<script src="resources/assets/js/jquery-1.11.0.min.js"></script>
-    <script src="resources/assets/js/jquery-migrate-1.2.1.min.js"></script>
-    <script src="resources/assets/js/bootstrap.bundle.min.js"></script>
-    <script src="resources/assets/js/templatemo.js"></script>
-    <script src="resources/assets/js/custom.js"></script>
+    </footer> -->
+<script src="/7team_project/resources/assets/js/jquery-1.11.0.min.js"></script>
+    <script src="/7team_project/resources/assets/js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="/7team_project/resources/assets/js/bootstrap.bundle.min.js"></script>
+    <script src="/7team_project/resources/assets/js/templatemo.js"></script>
+    <script src="/7team_project/resources/assets/js/custom.js"></script>
 </body>
 </html>
