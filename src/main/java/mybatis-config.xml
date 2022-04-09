@@ -18,6 +18,12 @@
 		<typeAlias type="com.javaclass.basic.vo.AddInfoVO" alias="AddInfoVO"/>
 		<typeAlias type="com.javaclass.basic.vo.OrdersVO" alias="OrdersVO"/>
 		<typeAlias type="com.javaclass.basic.vo.OrderGoodsVO" alias="OrderGoodsVO"/>
+		<typeAlias type="com.javaclass.basic.vo.ReviewVO" alias="ReviewVO"/>
+		<typeAlias type="com.javaclass.basic.vo.CartVO" alias="CartVO"/>
+		<typeAlias type="com.javaclass.basic.vo.OrderPageItemVO" alias="OrderPageItemVO"/>
+		<typeAlias type="com.javaclass.basic.vo.OrderPageVO" alias="OrderPageVO"/>
+		<typeAlias type="com.javaclass.basic.vo.OrderItemVO" alias="OrderItemVO"/>
+		<typeAlias type="com.javaclass.basic.vo.OrderVO" alias="OrderVO"/>
 	</typeAliases>
 	
 	
