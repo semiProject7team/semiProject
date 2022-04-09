@@ -5,6 +5,11 @@
 <!DOCTYPE html>
 <html>
 <head>
+<style type="text/css">
+.pagination {
+color:black;
+}
+</style>
 <meta charset="UTF-8">
 <title>Insert title here</title>
 </head>
