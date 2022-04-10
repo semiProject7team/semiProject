@@ -116,11 +116,11 @@
 									</div>
 								</div>
 								<c:choose>
-								<!-- 주문서관리페이지들어갈때 -->
+								
 									<c:when test="${param.cmd != null }">
 										<a  id="orderBack" class="btn btn-outline-light float-left">BACK</a>
 									</c:when>
-								<!-- 매장정보페이지들어갈때 -->
+								
 									<c:when test="${param.shopNo != null }">
 										<a href="manager_goodsInShopDelete.do?shopNo=${param.shopNo}&goodsNo=${param.goodsNo}" 
 										id="shopGoodsDelete" class="btn btn-outline-light float-left">매장용기삭제</a>
@@ -130,7 +130,7 @@
 										class="btn btn-outline-light float-left">사이즈삭제</a>
 										<a href="manager_addInfo.do?shopNo=${param.shopNo}" class="btn btn-outline-light float-left">BACK</a>
 									</c:when>
-								<!-- 상품관리페이지들어갈때 -->
+								
 									<c:otherwise>
 										<a href="manager_goodsDelete.do?goodsNo=${getGoodsInfo.goodsNo}" class="btn btn-outline-light float-left"
 										 id="goodsDelete">상품삭제하기</a>

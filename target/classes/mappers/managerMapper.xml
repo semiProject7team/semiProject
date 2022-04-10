@@ -63,8 +63,8 @@
 	
 	<!-- 상품관리 정렬 기능 -->
 	<select id="goodsSelectOption" resultType="GoodsVO" parameterType="GoodsVO">
-		select *
-		from goods
+		select *		
+		from goods			
 		order by ${goodsName}     
 	</select>
 		
