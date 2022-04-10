@@ -1,15 +1,18 @@
 @charset "UTF-8";
-* {
+ * {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
 }
+ 
 
-.yee {
-	background-image: url(../img/bk12.jpg);
-	background-position: center;
-    background-size: cover;
-}
+
+
+.container1 {
+    background-size: 100% 100%;
+    background-position: center;
+	background-image: url(../img/bk10.jpg);
+  } 
 
 .bg-light {
 	background-image: url(../img/bk7.png);
@@ -23,10 +26,10 @@
 	background-size: cover;
 }
 
-.wrap {
+#666 {
     height: 100%;
     width: 100%;
-    background-image: url(../img/be3.jpg);
+    background-image: url(../img/bk9.jpg);
     background-size: cover;
     position: absolute;
 } 
