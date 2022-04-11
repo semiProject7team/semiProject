@@ -192,7 +192,7 @@ https://templatemo.com/tm-559-zay-shop
         <tr>
             <th>주문번호</th>
             <th>주문날짜</th>
-            <th>주문자</th>
+            <th>주문인</th>
         </tr>
     </thead>
     <tbody>

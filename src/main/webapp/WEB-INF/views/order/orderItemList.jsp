@@ -195,7 +195,7 @@ https://templatemo.com/tm-559-zay-shop
         <tr>
             <th>구매상품번호</th>
             <th>상품이름</th>
-            <th>주문갯수</th>
+            <th>주문개수</th>
             <th>상품가격</th>
             <th>총가격</th>
             <!-- <th>총 상품 금액</th> -->
