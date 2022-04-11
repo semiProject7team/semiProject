@@ -7,26 +7,26 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>YongGI Shop</title>
+ <title>cart.jsp</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-     
+    
 
 
-   <link rel="apple-touch-icon" href="resources/img/apple-icon.png">
-    <link rel="shortcut icon" type="image/x-icon" href="resources/img/favicon.ico">
-    
-    <!-- 파비콘 이미지 수정 -->
-	<link rel="shortcut icon" type="image/x-icon" href="resources/imgs/favicon.JPG">
-    
-    <link rel="stylesheet" href="resources/css/bootstrap.min.css">
-    <link rel="stylesheet" href="resources/css/templatemo.css">
-    <link rel="stylesheet" href="resources/css/custom.css">
+   <link rel="apple-touch-icon" href="/7team_project/img/apple-icon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="/7team_project/img/favicon.ico">
+
+    <link rel="stylesheet" href="/7team_project/resources/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/7team_project/resources/css/templatemo.css">
+    <link rel="stylesheet" href="/7team_project/resources/css/custom.css">
 
     <!-- Load fonts style after rendering the layout styles -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
-    <link rel="stylesheet" href="resources/css/fontawesome.min.css">
-  
-    <link rel="stylesheet" href="resources/css/test.css">
+    <link rel="stylesheet" href="/7team_project/resources/css/fontawesome.min.css">
+   
+    
+    <link rel="stylesheet" href="/7team_project/resources/css/test.css">
+
+    
     
 <style type="text/css">
 /* login 밑줄 없애기 */
@@ -52,30 +52,19 @@ https://templatemo.com/tm-559-zay-shop
 </head>
 
 <body>
-    <!-- 헤더부분 -->
-<!-- Start Top Nav -->
+    <!-- Start Top Nav -->
     <nav class="navbar navbar-expand-lg bg-dark navbar-light d-none d-lg-block" id="templatemo_nav_top">
         <div class="container text-light">
             <div class="w-100 d-flex justify-content-between">
                 <div>
                     <i class="fa fa-envelope mx-2"></i>
-                    <a class="navbar-sm-brand text-light text-decoration-none" href="yonggi@company.com">yonggi@company.com</a>
+                     <a class="navbar-sm-brand text-light text-decoration-none" href="yonggi@company.com">yonggi@company.com</a>
                     <i class="fa fa-phone mx-2"></i>
-                    <a class="navbar-sm-brand text-light text-decoration-none" href="010-1234-5678">010-1234-5678</a>
+                     <a class="navbar-sm-brand text-light text-decoration-none" href="010-1234-5678">010-1234-5678</a>
                 </div>
                 <div>
-                
-                   <!-- 로그인 안 했을때 => 로그인 표시 -->
-                   <c:if test = "${empty sessionScope.memberId}" >   
-                    <a href="userLogin.do"> login </a>
-                     </c:if>
-                   
-                   <!-- 로그인 했을때 => 로그아웃 표시 -->
-                   <c:if test = "${not empty sessionScope.memberId}" >   
-                    <a href="logout.do"> logout </a>
-                   </c:if>
-                
-            <!--<a class="text-light" href="https://fb.com/templatemo" target="_blank" rel="sponsored"><i class="fab fa-facebook-f fa-sm fa-fw me-2"></i></a>
+                	<a href="userLogin.do"> login </a>
+                  <!--   <a class="text-light" href="https://fb.com/templatemo" target="_blank" rel="sponsored"><i class="fab fa-facebook-f fa-sm fa-fw me-2"></i></a>
                     <a class="text-light" href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram fa-sm fa-fw me-2"></i></a>
                     <a class="text-light" href="https://twitter.com/" target="_blank"><i class="fab fa-twitter fa-sm fa-fw me-2"></i></a>
                     <a class="text-light" href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin fa-sm fa-fw"></i></a> -->
@@ -86,8 +75,7 @@ https://templatemo.com/tm-559-zay-shop
     <!-- Close Top Nav -->
 
 
-
-     <!-- Header -->
+    <!-- Header -->
     <nav class="navbar navbar-expand-lg navbar-light shadow">
         <div class="container d-flex justify-content-between align-items-center">
 
@@ -102,12 +90,15 @@ https://templatemo.com/tm-559-zay-shop
             <div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between" id="templatemo_main_nav">
                 <div class="flex-fill">
                     <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
+                    	<!-- 상품 캠패인 바로가기 -->
                         <li class="nav-item">
                             <a class="nav-link" href="list.do">product</a>
                         </li>
+                        <!-- 카테고리 리뷰 캠패인 바로가기 -->
                         <li class="nav-item">
                             <a class="nav-link" href="review.do">review</a>
                         </li>
+                        <!-- 카테고리 용기내 매장 캠패인 바로가기 -->
                         <li class="nav-item">
                             <a class="nav-link" href="shopList/shop.do">campaign</a>
                         </li>
@@ -116,7 +107,7 @@ https://templatemo.com/tm-559-zay-shop
                         </li> -->
                     </ul>
                 </div>
-               <div class="navbar align-self-center d-flex">
+                <div class="navbar align-self-center d-flex">
                     <div class="d-lg-none flex-sm-fill mt-3 mb-4 col-7 col-sm-auto pr-3">
                         <div class="input-group">
                             <input type="text" class="form-control" id="inputMobileSearch" placeholder="Search ...">
@@ -125,51 +116,24 @@ https://templatemo.com/tm-559-zay-shop
                             </div>
                         </div>
                     </div>
-                   <!-- <a class="nav-icon d-none d-lg-inline" href="#" data-bs-toggle="modal" data-bs-target="#templatemo_search">
+                     <!-- start 오른쪽 아이콘  -->
+                    <!-- <a class="nav-icon d-none d-lg-inline" href="#" data-bs-toggle="modal" data-bs-target="#templatemo_search">
                         <i class="fa fa-fw fa-search text-dark mr-2"></i>
-                    </a>  -->
-                    
-                    
-                   <%--  <!-- 장바구니 로그인 안했을 때 => 로그인 화면으로 이동 -->
-                   <c:if test = "${empty sessionScope.memberId}" > 
-                    <a class="nav-icon position-relative text-decoration-none" href="userLogin.do">
-                        <i class="fa fa-fw fa-cart-arrow-down text-dark mr-1"></i>
-                        <!-- <span class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark">7</span> -->
-                    </a>
-                    </c:if>
-                    <!-- 장바구니 로그인 했을 때 =>  이동 cart.do로 이동-->
-                   <c:if test = "${not empty sessionScope.memberId}" >  
-                    <a class="nav-icon position-relative text-decoration-none" href="cart.do?memberId=${sessionScope.memberId}">
-                        <i class="fa fa-fw fa-cart-arrow-down text-dark mr-1"></i>
-                        <!-- <span class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark">7</span> -->
-                    </a>
-                    </c:if> --%>
-                    
+                    </a> -->
                     <!-- 장바구니 아이콘 누르면 장바구니로 이동 session에 저장된 memberId가져가야함 요청값 : cart.do(CartController) -->
                     <a class="nav-icon position-relative text-decoration-none" href="cart.do?memberId=${ sessionScope.memberId }">
                         <i class="fa fa-fw fa-cart-arrow-down text-dark mr-1"></i>
                         <!-- <span class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark">7</span> -->
                     </a>
-                    
-                    <!-- 마이페이지 로그인 안했을 때 =>  로그인 화면으로 이동-->
-                   <c:if test = "${empty sessionScope.memberId}" >  
-                    <a class="nav-icon position-relative text-decoration-none" href="userLogin.do">
+                    <a class="nav-icon position-relative text-decoration-none" href="#">
                         <i class="fa fa-fw fa-user text-dark mr-3"></i>
                         <!-- <span class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark">+99</span> -->
                     </a> 
-                    </c:if>
-                    
-                    <!-- 마이페이지 로그인 했을 때 =>  mypage.do로 이동-->
-                   <c:if test = "${not empty sessionScope.memberId}" > 
-                    <a class="nav-icon position-relative text-decoration-none" href="mypage.do">
-                        <i class="fa fa-fw fa-user text-dark mr-3"></i>
-                        <!-- <span class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark">+99</span> -->
-                    </a> 
-                    </c:if>
-                </div>      
-            </div>   
+                    <!-- close 오른쪽 아이콘  -->
+                </div>
+            </div>
 
-        </div> 
+        </div>
     </nav>
     <!-- Close Header -->
 
@@ -331,11 +295,11 @@ https://templatemo.com/tm-559-zay-shop
 
 
     <!-- Start Script -->
-    <script src="resources/js/jquery-1.11.0.min.js"></script>
-    <script src="resources/js/jquery-migrate-1.2.1.min.js"></script>
-    <script src="resources/js/bootstrap.bundle.min.js"></script>
-    <script src="resources/js/templatemo.js"></script>
-    <script src="resources/js/custom.js"></script>
+    <script src="/7team_project/resources/js/jquery-1.11.0.min.js"></script>
+    <script src="/7team_project/resources/js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="/7team_project/resources/js/bootstrap.bundle.min.js"></script>
+    <script src="/7team_project/resources/js/templatemo.js"></script>
+    <script src="/7team_project/resources/js/custom.js"></script>
     <!-- End Script -->
     
    <script type="text/javascript">

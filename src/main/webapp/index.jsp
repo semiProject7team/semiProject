@@ -9,18 +9,18 @@
     
 
 
-    <link rel="apple-touch-icon" href="resources/assets/img/apple-icon.png">
-    <link rel="shortcut icon" type="image/x-icon" href="resources/assets/img/favicon.ico">
+    <link rel="apple-touch-icon" href="/7team_project/resources/assets/img/apple-icon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="/7team_project/resources/assets/img/favicon.ico">
 
-    <link rel="stylesheet" href="resources/assets/css/shop.css">
-    <link rel="stylesheet" href="resources/assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="resources/assets/css/templatemo.css">
-    <link rel="stylesheet" href="resources/assets/css/custom.css">
+    <link rel="stylesheet" href="/7team_project/resources/assets/css/shop.css">
+    <link rel="stylesheet" href="/7team_project/resources/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/7team_project/resources/assets/css/templatemo.css">
+    <link rel="stylesheet" href="/7team_project/resources/assets/css/custom.css">
 
     <!-- Load fonts style after rendering the layout styles -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
-    <link rel="stylesheet" href="resources/assets/css/fontawesome.min.css">
-<title>YongGI Shop</title> 
+    <link rel="stylesheet" href="/7team_project/resources/assets/css/fontawesome.min.css">
+<title>메인페이지</title>
 </head>
 <body>
 <!-- Start Top Nav -->
@@ -69,7 +69,7 @@
                             <a class="nav-link" href="about.do">상품보기</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="shopList/shop.do">용기매장리스트</a>
+                            <a class="nav-link" href="/7team_project/shopList/shop.do">용기매장리스트</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="contact.do">오시는 길</a>
@@ -134,7 +134,7 @@
                 <div class="container">
                     <div class="row p-5">
                         <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
-                            <img class="img-fluid" src="resources/assets/img/gurut5.jpg" style= "float:right; width:522px; height:350px; vertical-align: middle;" alt="사진1">
+                            <img class="img-fluid" src="/7team_project/resources/assets/img/gurut5.jpg" style= "float:right; width:522px; height:350px; vertical-align: middle;" alt="사진1">
                         </div>
                         <div class="col-lg-6 mb-0 d-flex align-items-center">
                             <div class="text-align-left align-self-center">
@@ -153,11 +153,11 @@
                 <div class="container">
                     <div class="row p-5">
                         <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
-                            <img class="img-fluid" src="resources/assets/img/gurut2.png" style= "float:right; width:522px; height:350px; vertical-align: middle;" alt="사진2">
+                            <img class="img-fluid" src="/7team_project/resources/assets/img/gurut2.png" style= "float:right; width:522px; height:350px; vertical-align: middle;" alt="사진2">
                         </div>
                         <div class="col-lg-6 mb-0 d-flex align-items-center">
                             <div class="text-align-left">
-                                <h1 class="h1">다양한 종류 및 사이즈</h1>
+                                <h1 class="h1">다양한 종류 및 사이즈</h1> 
                                 <h3 class="h2">Various types, meticulous size</h3>
                                 <p>
                                    저희 매장은 재활용이 가능한 자연에서 온 유리소재를 선택하고, 충격에 강한 강화유리로 내구성을 더하고 <strong>디테일과 세심한 디자인</strong> 적용 <br/>
@@ -172,7 +172,7 @@
                 <div class="container">
                     <div class="row p-5">
                         <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
-                            <img class="img-fluid" src="resources/assets/img/gurut3.png" style= "float:right; width:522px; height:350px; vertical-align: middle;" alt="사진2">
+                            <img class="img-fluid" src="/7team_project/resources/assets/img/gurut3.png" style= "float:right; width:522px; height:350px; vertical-align: middle;" alt="사진2">
                         </div>
                         <div class="col-lg-6 mb-0 d-flex align-items-center">
                             <div class="text-align-left">
@@ -211,14 +211,14 @@
         </div>
         <div class="row">
             <div class="col-12 col-md-6 p-5 mt-3" style= "text-align: center;">
-                <a href="#"><img src="resources/assets/img/gurut6.png"  class="rounded-circle img-fluid border" style= "width:454px; height:385px; vertical-align: middle;" alt="사진1"></a>
+                <a href="#"><img src="/7team_project/resources/assets/img/gurut6.png"  class="rounded-circle img-fluid border" style= "width:454px; height:385px; vertical-align: middle;" alt="사진1"></a>
                 <h5 class="text-center mt-3 mb-3">상품보기</h5>
                 <p class="text-center"><a class="btn btn-success" href="list.do">상품 페이지 바로가기</a></p>
             </div>
             <div class="col-12 col-md-5 p-5 mt-3">
-                <a href="#"><img src="resources/assets/img/gurut7.jpg"  class="rounded-circle img-fluid border"></a>
+                <a href="#"><img src="/7team_project/resources/assets/img/gurut7.jpg"  class="rounded-circle img-fluid border"></a>
                 <h2 class="h5 text-center mt-3 mb-3">매장리스트보기</h2>
-                <p class="text-center"><a class="btn btn-success" href="shopList/shop.do">매장 리스트 검색 바로가기</a></p>
+                <p class="text-center"><a class="btn btn-success" href="/7team_project/shopList/shop.do">매장 리스트 검색 바로가기</a></p>
             </div>
         </div>
     </section>  
@@ -243,7 +243,7 @@
                 <div class="col-12 col-md-4 mb-4">
                     <div class="card h-100">
                         <!-- <img src="shop-single.html"> -->
-                            <img src="resources/assets/img/kk1.png" style= "height:410px;" class="card-img-top" alt="...">
+                            <img src="/7team_project/resources/assets/img/kk1.png" style= "height:410px;" class="card-img-top" alt="...">
                         </a>
                         <div class="card-body">
                             <ul class="list-unstyled d-flex justify-content-between">
@@ -267,7 +267,7 @@
                 <div class="col-12 col-md-4 mb-4">
                     <div class="card h-100">
                         <a href="shop-single.html">
-                            <img src="resources/assets/img/kk2.png" style= "height:410px;" class="card-img-top" alt="...">
+                            <img src="/7team_project/resources/assets/img/kk2.png" style= "height:410px;" class="card-img-top" alt="...">
                         </a>
                         <div class="card-body">
                             <ul class="list-unstyled d-flex justify-content-between">
@@ -293,7 +293,7 @@
                 <div class="col-12 col-md-4 mb-4">
                     <div class="card h-100">
                         <a href="shop-single.html">
-                            <img src="resources/assets/img/kk3.png" style= "height:410px;" class="card-img-top" alt="...">
+                            <img src="/7team_project/resources/assets/img/kk3.png" style= "height:410px;" class="card-img-top" alt="...">
                         </a>
                         <div class="card-body">
                             <ul class="list-unstyled d-flex justify-content-between">
@@ -347,7 +347,7 @@
 
 
     <!-- Start Footer -->
-    <footer class="bg-dark" id="tempaltemo_footer">
+   <!--  <footer class="bg-dark" id="tempaltemo_footer">
         <div class="container">
             <div class="row">
 
@@ -438,11 +438,11 @@
             </div>
         </div>
 
-    </footer>
-<script src="resources/assets/js/jquery-1.11.0.min.js"></script>
-    <script src="resources/assets/js/jquery-migrate-1.2.1.min.js"></script>
-    <script src="resources/assets/js/bootstrap.bundle.min.js"></script>
-    <script src="resources/assets/js/templatemo.js"></script>
-    <script src="resources/assets/js/custom.js"></script>
+    </footer> -->
+<script src="/7team_project/resources/assets/js/jquery-1.11.0.min.js"></script>
+    <script src="/7team_project/resources/assets/js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="/7team_project/resources/assets/js/bootstrap.bundle.min.js"></script>
+    <script src="/7team_project/resources/assets/js/templatemo.js"></script>
+    <script src="/7team_project/resources/assets/js/custom.js"></script>
 </body>
 </html>
